@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "SilverBulletPro.Core.Blocks.BlockRequest"
+  },
+  {
+    "Name": "SilverBulletPro.Core.Blocks.BlockKeycheck"
+  },
+  {
+    "Name": "SilverBulletPro.Core.Blocks.BlockParse"
+  },
+  {
+    "Name": "SilverBulletPro.Plugin.RecaptchaV3Bypass"
+  },
+  {
+    "Name": "SilverBulletPro.Core.Blocks.BlockSubstring"
+  }
+]

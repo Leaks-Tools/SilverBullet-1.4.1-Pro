@@ -1,0 +1,496 @@
+<SyntaxDefinition name="C#"
+      xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+  <Color name="Comment" foreground="Gray" />
+  <Color name="Disabled" foreground="Tomato" />
+  <Color name="string" foreground="LightBlue" />
+  <Color name="Variable" foreground="Yellow" />
+
+  <!-- This is the main ruleset. -->
+  <RuleSet>
+    <Span color="Comment" begin="##" />
+    <Span color="Disabled" begin="!" />
+    <!-- <Span color="Comment" multiline="true" begin="/\*" end="\*/" /> -->
+
+    <Span color="string">
+      <Begin>"</Begin>
+      <End>"</End>
+      <RuleSet>
+        <Span begin="\\" end="." />
+        <Rule color="Variable">
+          &lt;[^&gt;|&quot;]*&gt;
+        </Rule>
+      </RuleSet>
+    </Span>
+
+    <Keywords fontWeight="bold" foreground="GreenYellow">
+      <Word>ConstantString</Word>
+      <Word>ConstantList</Word>
+      <Word>ConstantList</Word>
+      <Word>ConstantByteArray</Word>
+      <Word>ConstantDictionary</Word>
+      <Word>Hash</Word>
+      <Word>MergeByteArrays</Word>
+      <Word>AesEncrypt</Word>
+      <Word>AesDecrypt</Word>
+      <Word>Hmac</Word>
+      <Word>JwtEncode</Word>
+      <Word>JwtDecode</Word>
+      <Word>PBKDF2PKCS5</Word>
+      <Word>RsaEncrypt</Word>
+      <Word>RsaDecrypt</Word>
+      <Word>RSAPKCS1PAD2</Word>
+      <Word>RsaDigitalSign</Word>
+      <Word>Scrypt</Word>
+      <Word>Bcrypt</Word>
+      <Word>XOR</Word>
+      <Word>Aws4Signature</Word>
+      <Word>CryptoJsEncrypt</Word>
+      <Word>CryptoJsDecrypt</Word>
+      <Word>AddKeyValuePair</Word>
+      <Word>DictGetKey</Word>
+      <Word>DictGetValue</Word>
+      <Word>DictRemove</Word>
+      <Word>DictionaryToList</Word>
+      <Word>DictionaryToString</Word>
+      <Word>Compute</Word>
+      <Word>Ceil</Word>
+      <Word>TakeMinFloat</Word>
+      <Word>TakeMaxFloat</Word>
+      <Word>RandomFloat</Word>
+      <Word>RoundFloat</Word>
+      <Word>RoundToInt</Word>
+      <Word>Abs</Word>
+      <Word>TakeMinInt</Word>
+      <Word>TakeMaxInt</Word>
+      <Word>RandomInt</Word>
+      <Word>AddToList</Word>
+      <Word>ConcatLists</Word>
+      <Word>CreateListOfNumbers</Word>
+      <Word>GetRandomItem</Word>
+      <Word>GetListLength</Word>
+      <Word>JoinList</Word>
+      <Word>MapLists</Word>
+      <Word>RemoveAllFromList</Word>
+      <Word>RemoveDuplicates</Word>
+      <Word>RemoveFromList</Word>
+      <Word>Shuffle</Word>
+      <Word>SortList</Word>
+      <Word>ListToDictionary</Word>
+      <Word>ZipLists</Word>
+      <Word>CountOccurrences</Word>
+      <Word>EncodeHtmlEntities</Word>
+      <Word>DecodeHtmlEntities</Word>
+      <Word>Length</Word>
+      <Word>RandomString</Word>
+      <Word>RegexReplace</Word>
+      <Word>Replace</Word>
+      <Word>Reverse</Word>
+      <Word>Split</Word>
+      <Word>Substring</Word>
+      <Word>CharAt</Word>
+      <Word>ToLowerCase</Word>
+      <Word>ToUpperCase</Word>
+      <Word>ToTitleCase</Word>
+      <Word>Translate</Word>
+      <Word>Trim</Word>
+      <Word>Unescape</Word>
+      <Word>UrlEncode</Word>
+      <Word>UrlDecode</Word>
+      <Word>CurrentUnixTime</Word>
+      <Word>DateToUnixTime</Word>
+      <Word>UnixTimeToDate</Word>
+      <Word>UnixTimeToISO8601</Word>
+      <Word>CurrentDateTime</Word>
+      <Word>CalcDateTimeDiff</Word>
+      <Word>CalcRelativeTime</Word>
+      <Word>GenerateGuid</Word>
+      <Word>RandomUserAgent</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#ddadaf">
+      <Word>ShellCommand</Word>
+      <Word>NativeLibInvoke</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="DodgerBlue">
+      <Word>KeyCheck</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="Plum">
+      <Word>KEYCHAIN</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="SkyBlue">
+      <Word>KEY</Word>
+      <Word>VALUE</Word>
+      <Word>NKEY</Word>
+      <Word>MKEY</Word>
+      <Word>NMKEY</Word>
+      <Word>RKEY</Word>
+      <Word>PARAM</Word>
+      <Word>ARG</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="Turquoise">
+      <Word>SolveTextCaptcha</Word>
+      <Word>SolveImageCaptcha</Word>
+      <Word>SolveFunCaptcha</Word>
+      <Word>SolveRecaptchaV2</Word>
+      <Word>SolveRecaptchaV3</Word>
+      <Word>SolveHCaptcha</Word>
+      <Word>SolveKeyCaptcha</Word>
+      <Word>SolveGeeTestCaptcha</Word>
+      <Word>SolveCapyCaptcha</Word>
+      <Word>OCR</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#1E71EE">
+      <Word>RecaptchaV3Bypass</Word>
+    </Keywords>
+    <Keywords fontWeight="bold" foreground="#00C6BF">
+      <Word>HCaptchaBypass</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="LimeGreen">
+      <Word>HttpRequest</Word>
+    </Keywords>
+    <Keywords fontWeight="bold" foreground="#E8C0B2">
+      <Word>CFBypass</Word>
+      <Word>DestroyCFBypass</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#fbec5d">
+      <Word>FtpConnect</Word>
+      <Word>FtpLogin</Word>
+      <Word>FtpDisconnect</Word>
+      <Word>FtpDownloadFile</Word>
+      <Word>FtpUploadFile</Word>
+      <Word>FtpUpload</Word>
+      <Word>FtpDownload</Word>
+      <Word>FtpListItems</Word>
+      <Word>FtpGetFileSize</Word>
+      <Word>FtpFileExists</Word>
+      <Word>FtpDeleteFile</Word>
+      <Word>FtpDelete</Word>
+      <Word>FtpChangeDir</Word>
+      <Word>FtpGetCurrentDir</Word>
+      <Word>FtpGetFileDateTime</Word>
+      <Word>FtpGetConnectionState</Word>
+      <Word>FtpSendCommand</Word>
+      <Word>FtpReadResponse</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#C98FE4">
+      <Word>ImapConnect</Word>
+      <Word>ImapLogin</Word>
+      <Word>ImapDisconnect</Word>
+      <Word>ImapReadMail</Word>
+      <Word>ImapReadMailRaw</Word>
+      <Word>ImapSearchMails</Word>
+      <Word>ImapSelectFolder</Word>
+      <Word>ImapDeleteMail</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#D38843">
+      <Word>SmtpConnect</Word>
+      <Word>SmtpLogin</Word>
+      <Word>SmtpDisconnect</Word>
+      <Word>SmtpSendMail</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#74c365">
+      <Word>Pop3Connect</Word>
+      <Word>Pop3Login</Word>
+      <Word>Pop3Disconnect</Word>
+      <Word>Pop3GetMails</Word>
+      <Word>Pop3ReadMail</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#6699ff">
+      <Word>SshAuthenticateWithNone</Word>
+      <Word>SshAuthenticateWithPassword</Word>
+      <Word>SshAuthenticateWithPK</Word>
+      <Word>SshDisconnect</Word>
+      <Word>SshRunCommand</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#FF9370DB">
+      <Word>TcpConnect</Word>
+      <Word>TcpDisconnect</Word>
+      <Word>TcpRead</Word>
+      <Word>TcpSendRead</Word>
+      <Word>TcpSendReadHttp</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#addfad">
+      <Word>WebSocketConnect</Word>
+      <Word>WebSocketDisconnect</Word>
+      <Word>WebSocketRead</Word>
+      <Word>WebSocketSend</Word>
+      <Word>WebSocketSendAudio</Word>
+      <Word>WebSocketClose</Word>
+      <Word>WebSocketState</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#e9967a">
+      <Word>PuppeteerOpenBrowser</Word>
+      <Word>PuppeteerNewTab</Word>
+      <Word>PuppeteerGoBack</Word>
+      <Word>PuppeteerGoForward</Word>
+      <Word>PuppeteerReload</Word>
+      <Word>PuppeteerSwitchToTab</Word>
+      <Word>PuppeteerCloseTab</Word>
+      <Word>PuppeteerCloseBrowser</Word>
+      <Word>PuppeteerClick</Word>
+      <Word>PuppeteerExists</Word>
+      <Word>PuppeteerGetAttributeValue</Word>
+      <Word>PuppeteerGetAttributeValueAll</Word>
+      <Word>PuppeteerGetHeight</Word>
+      <Word>PuppeteerGetWidth</Word>
+      <Word>PuppeteerGetPositionX</Word>
+      <Word>PuppeteerGetPositionY</Word>
+      <Word>PuppeteerIsDisplayed</Word>
+      <Word>PuppeteerScreenshotElement</Word>
+      <Word>PuppeteerScreenshotBase64</Word>
+      <Word>PuppeteerSelect</Word>
+      <Word>PuppeteerSelectByIndex</Word>
+      <Word>PuppeteerSelectByText</Word>
+      <Word>PuppeteerSetAttributeValue</Word>
+      <Word>PuppeteerSubmit</Word>
+      <Word>PuppeteerSwitchToFrame</Word>
+      <Word>PuppeteerTypeElement</Word>
+      <Word>PuppeteerTypeElementHuman</Word>
+      <Word>PuppeteerUploadFiles</Word>
+      <Word>PuppeteerWaitForElement</Word>
+      <Word>PuppeteerNavigateTo</Word>
+      <Word>PuppeteerWaitForNavigation</Word>
+      <Word>PuppeteerWaitForResponse</Word>
+      <Word>PuppeteerGetCookies</Word>
+      <Word>PuppeteerClearCookies</Word>
+      <Word>PuppeteerSetCookies</Word>
+      <Word>PuppeteerSetUserAgent</Word>
+      <Word>PuppeteerSetCaptchaSolution</Word>
+      <Word>PuppeteerGetDOM</Word>
+      <Word>PuppeteerSetViewport</Word>
+      <Word>PuppeteerSwitchToMainFrame</Word>
+      <Word>PuppeteerPageKeyPress</Word>
+      <Word>PuppeteerPageKeyDown</Word>
+      <Word>PuppeteerPageKeyUp</Word>
+      <Word>PuppeteerScreenshotPage</Word>
+      <Word>PuppeteerScreenshotPageBase64</Word>
+      <Word>PuppeteerScrollBy</Word>
+      <Word>PuppeteerScrollToTop</Word>
+      <Word>PuppeteerScrollToBottom</Word>
+      <Word>PuppeteerPageType</Word>
+      <Word>PuppeteerExecuteFunc</Word>
+      <Word>PuppeteerExecuteJs</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#5FB45A">
+      <Word>SeleniumOpenBrowser</Word>
+      <Word>SeleniumNewTab</Word>
+      <Word>SeleniumFullScreen</Word>
+      <Word>SeleniumMinimize</Word>
+      <Word>SeleniumMaximize</Word>
+      <Word>SeleniumGoBack</Word>
+      <Word>SeleniumGoForward</Word>
+      <Word>SeleniumReload</Word>
+      <Word>SeleniumSetBrowserSize</Word>
+      <Word>SeleniumSwitchToTab</Word>
+      <Word>SeleniumCloseTab</Word>
+      <Word>SeleniumCloseBrowser</Word>
+      <Word>SeleniumClick</Word>
+      <Word>SeleniumExists</Word>
+      <Word>SeleniumGetAttributeValue</Word>
+      <Word>SeleniumGetAttributeValueAll</Word>
+      <Word>SeleniumSetAttributeValue</Word>
+      <Word>SeleniumGetHeight</Word>
+      <Word>SeleniumGetWidth</Word>
+      <Word>SeleniumGetPositionX</Word>
+      <Word>SeleniumGetPositionY</Word>
+      <Word>SeleniumGetText</Word>
+      <Word>SeleniumIsDisplayed</Word>
+      <Word>SeleniumIsEnabled</Word>
+      <Word>SeleniumIsSelected</Word>
+      <Word>SeleniumLocationX</Word>
+      <Word>SeleniumLocationY</Word>
+      <Word>SeleniumScreenshotElement</Word>
+      <Word>SeleniumScreenshotBase64</Word>
+      <Word>SeleniumSelect</Word>
+      <Word>SeleniumSelectByIndex</Word>
+      <Word>SeleniumSelectByText</Word>
+      <Word>SeleniumClearField</Word>
+      <Word>SeleniumTypeElement</Word>
+      <Word>SeleniumTypeElementHuman</Word>
+      <Word>SeleniumSubmit</Word>
+      <Word>SeleniumSwitchToFrame</Word>
+      <Word>SeleniumWaitForElement</Word>
+      <Word>SeleniumNavigateTo</Word>
+      <Word>SeleniumGetCookies</Word>
+      <Word>SeleniumClearCookies</Word>
+      <Word>SeleniumSetCookies</Word>
+      <Word>SeleniumGetDOM</Word>
+      <Word>SeleniumSwitchToMainFrame</Word>
+      <Word>SeleniumSwitchToParentFrame</Word>
+      <Word>SeleniumSwitchToAlert</Word>
+      <Word>SeleniumPageKeyPress</Word>
+      <Word>SeleniumPageKeyDown</Word>
+      <Word>SeleniumPageKeyUp</Word>
+      <Word>SeleniumScreenshotPage</Word>
+      <Word>SeleniumScreenshotPageBase64</Word>
+      <Word>SeleniumPageType</Word>
+      <Word>SeleniumScrollBy</Word>
+      <Word>SeleniumExecuteJs</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="Plum">
+      <Word>HEADER</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#B6A6F5">
+      <Word>FILTER</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="SkyBlue">
+      <Word>COOKIE</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="Gold">
+      <Word>Parse</Word>
+      <Word>LambdaParser</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="Orange">
+      <Word>LR</Word>
+      <Word>CSS</Word>
+      <Word>JSON</Word>
+      <Word>REGEX</Word>
+      <Word>XPATH</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="DarkOrange">
+      <Word>ReportLastSolution</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="Wheat">
+      <Word>Base64ToBytes</Word>
+      <Word>BytesToBase64</Word>
+      <Word>Base64ToString</Word>
+      <Word>BigIntegerToBytes</Word>
+      <Word>BytesToBigInteger</Word>
+      <Word>BinaryStringToBytes</Word>
+      <Word>BytesToBinaryString</Word>
+      <Word>HexToBytes</Word>
+      <Word>BytesToHex</Word>
+      <Word>BytesToHex</Word>
+      <Word>ReadableSize</Word>
+      <Word>IntToBytes</Word>
+      <Word>NumberToWords</Word>
+      <Word>WordsToNumber</Word>
+      <Word>StringToBytes</Word>
+      <Word>BytesToString</Word>
+      <Word>CreatePath</Word>
+      <Word>FileAppend</Word>
+      <Word>FileAppendLines</Word>
+      <Word>FileExists</Word>
+      <Word>FileCopy</Word>
+      <Word>FileDelete</Word>
+      <Word>FileMove</Word>
+      <Word>FileRead</Word>
+      <Word>FileReadBytes</Word>
+      <Word>FileReadLines</Word>
+      <Word>FileWrite</Word>
+      <Word>FileWriteBytes</Word>
+      <Word>FileWriteLines</Word>
+      <Word>FolderDelete</Word>
+      <Word>FolderExists</Word>
+      <Word>GetFilesInFolder</Word>
+      <Word>SvgToPng</Word>
+      <Word>ClearCookies</Word>
+      <Word>Delay</Word>
+      <Word>GetHWID</Word>
+      <Word>TlgSendMessage</Word>
+    </Keywords>
+
+    <!-- Control flow -->
+    <Keywords fontWeight="bold" foreground="OrangeRed">
+      <Word>IF</Word>
+      <Word>ELIF</Word>
+      <Word>ELSE</Word>
+      <Word>ENDIF</Word>
+      <Word>WHILE</Word>
+      <Word>ENDWHILE</Word>
+      <Word>JUMP</Word>
+      <Word>BEGIN</Word>
+      <Word>END</Word>
+      <Word>SCRIPT</Word>
+    </Keywords>
+
+    <!-- Other commands -->
+
+
+    <Keywords fontWeight="bold" foreground="Orange">
+      <Word>PRINT</Word>
+      <Word>SET</Word>
+      <Word>DELETE</Word>
+      <Word>MOUSEACTION</Word>
+      <Word>JInt</Word>
+      <Word>Jint</Word>
+      <Word>NodeJS</Word>
+      <Word>NodeJs</Word>
+      <Word>Python</Word>
+      <Word>Csharp</Word>
+      <Word>CSharp</Word>
+      <Word>STOP</Word>
+      <Word>ForceStop</Word>
+    </Keywords>
+
+    <Keywords foreground="Yellow">
+      <Word>VAR</Word>
+      <Word>GVAR</Word>
+      <Word>VARS</Word>
+    </Keywords>
+
+    <Keywords foreground="Tomato">
+      <Word>CAP</Word>
+    </Keywords>
+
+    <Keywords foreground="Magenta">
+      <Word>-&gt;</Word>
+    </Keywords>
+
+    <Keywords foreground="#5CCEFF">
+      <Word>TRUE</Word>
+      <Word>True</Word>
+      <Word>False</Word>
+      <Word>FALSE</Word>
+    </Keywords>
+
+    <Keywords fontWeight="bold" foreground="#1FE0E0">
+      <Word>MESSAGE</Word>
+    </Keywords>
+
+    <Rule foreground="LightGreen">
+      &quot;*Base64|&quot;*ByteArray|&quot;*String|Hex|Var|Const|HiddenVar|SAFE
+    </Rule>
+
+    <Rule foreground="Yellow">(?&lt;=\s)@(?=&quot;){0}</Rule>
+    <Rule foreground="Yellow">(?&lt;=\s)\$(?=&quot;){0}</Rule>
+    <Rule foreground="Orange">(?&lt;=\s)CS(?=&quot;){0}</Rule>
+    <Rule foreground="Orange">(?&lt;=\s)JS(?=&quot;){0}</Rule>
+    <Rule foreground="GreenYellow">(?&lt;=\s)PY(?=&quot;){0}</Rule>
+    <Rule foreground="#FF8CC6FF">(?&lt;=\s)B64(?=&quot;){0}</Rule>
+    <Rule foreground="#FF8CC6FF">(?&lt;=\s)HEX(?=&quot;){0}</Rule>
+
+    <!-- Digits -->
+    <Rule foreground="DarkSeaGreen">
+      \b0[xX][0-9a-fA-F]+  # hex number
+      |    \b
+      (    \d+(\.[0-9]+)?   #number with optional floating point
+      |    \.[0-9]+         #or just starting with floating point
+      )
+      ([eE][+-]?[0-9]+)? # optional exponent
+    </Rule>
+
+  </RuleSet>
+</SyntaxDefinition>

@@ -1,0 +1,1331 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <!--#region MainWindow-->
+
+    <sys:String x:Key="Runner">Runner</sys:String>
+    <!--  General  -->
+    <sys:String x:Key="Proxies">Proxies</sys:String>
+    <sys:String x:Key="Wordlists">Wordlists</sys:String>
+    <sys:String x:Key="Configs">Configs</sys:String>
+    <sys:String x:Key="HitsDB">Hits DB</sys:String>
+    <sys:String x:Key="Tools">Tools</sys:String>
+    <sys:String x:Key="Plugins">Plugins</sys:String>
+    <sys:String x:Key="Settings">Settings</sys:String>
+    <sys:String x:Key="CoreSettings">Core Settings</sys:String>
+    <sys:String x:Key="SBSettings">SB Settings</sys:String>
+    <sys:String x:Key="Help">Help</sys:String>
+    <sys:String x:Key="SilverZone">Silver Zone</sys:String>
+    <sys:String x:Key="About">About</sys:String>
+
+    <!--#region Tooltips-->
+
+    <sys:String x:Key="OpenLogTip">Open the Log</sys:String>
+    <sys:String x:Key="TakeScreenShortTip">Take a Screenshot</sys:String>
+    <sys:String x:Key="JoinToDiscordServerTip">Join To Discord Server</sys:String>
+    <sys:String x:Key="JoinToTelegramChannelTip">Join To Telegram Channel</sys:String>
+    <sys:String x:Key="ChangelogTip">Changelog</sys:String>
+    <sys:String x:Key="ChangeLanguageTip">Change Language</sys:String>
+    <sys:String x:Key="CheckForUpdatesTip">Check For Updates...</sys:String>
+
+    <!--#endregion Tooltips-->
+
+    <!--#endregion MainWindow-->
+
+    <!--#region Runner Manager-->
+
+    <sys:String x:Key="New">New</sys:String>
+    <sys:String x:Key="Add">Add</sys:String>
+    <sys:String x:Key="StartAll">Start All</sys:String>
+    <sys:String x:Key="StopAll">Stop All</sys:String>
+    <sys:String x:Key="Stop">Stop</sys:String>
+    <sys:String x:Key="RemoveAll">Remove All</sys:String>
+    <sys:String x:Key="RunnerTip">TIP: Click on a Runner to switch to the detailed view</sys:String>
+
+    <!--#endregion Runner Manager-->
+
+    <!--#region Proxy Manager-->
+
+    <sys:String x:Key="ProxyChecker">Proxy Checker</sys:String>
+    <sys:String x:Key="ProxyManager_Import">Import</sys:String>
+    <sys:String x:Key="ProxyManager_Edit">Edit</sys:String>
+    <sys:String x:Key="ProxyManager_SendToChecker">Send to Checker</sys:String>
+    <sys:String x:Key="ProxyManager_Delete">Delete</sys:String>
+    <sys:String x:Key="ProxyManager_DeleteAll">Delete All</sys:String>
+    <sys:String x:Key="ProxyManager_DeleteNotFound">Delete Not Found</sys:String>
+    <sys:String x:Key="ProxyManager_Search">Search</sys:String>
+
+    <sys:String x:Key="ProxyManager_GridViewDefaultType">Default Type</sys:String>
+    <sys:String x:Key="ProxyManager_GridViewIncludedTypes">Included Type(s)</sys:String>
+    <sys:String x:Key="ProxyManager_GridViewName">Name</sys:String>
+    <sys:String x:Key="ProxyManager_GridViewPath">Path</sys:String>
+    <sys:String x:Key="ProxyManager_GridViewWorking">Working</sys:String>
+    <sys:String x:Key="ProxyManager_GridViewLastChecked">LastChecked</sys:String>
+    <sys:String x:Key="ProxyManager_GridViewLastTotal">Total</sys:String>
+
+    <sys:String x:Key="ProxyManager_Check">Check</sys:String>
+    <sys:String x:Key="ProxyManager_DeleteNotWorking">Delete Not Working</sys:String>
+    <sys:String x:Key="ProxyManager_DeleteDuplicates">Delete Duplicates</sys:String>
+    <sys:String x:Key="ProxyManager_DeleteUntested">Delete Untested</sys:String>
+    <sys:String x:Key="ProxyManager_Export">Export</sys:String>
+    <sys:String x:Key="ProxyManager_Bot">Bot</sys:String>
+
+    <sys:String x:Key="ProxyManager_Working">Working</sys:String>
+    <sys:String x:Key="ProxyManager_LastChecked">Last Checked</sys:String>
+
+    <sys:String x:Key="ProxyManager_DeleteDuplicate">Delete Duplicate</sys:String>
+    <sys:String x:Key="ProxyManager_TargetOn">Target On</sys:String>
+    <sys:String x:Key="ProxyManager_Username">Username</sys:String>
+    <sys:String x:Key="ProxyManager_Password">Password</sys:String>
+    <sys:String x:Key="ProxyManager_AddMultipleLists">Add Multiple Lists</sys:String>
+    <sys:String x:Key="ProxyManager_OnlyUntested">Only Untested</sys:String>
+    <sys:String x:Key="ProxyManager_TimeoutSec">Timeout (sec)</sys:String>
+    <sys:String x:Key="ProxyManager_Proxylist">Proxylist</sys:String>
+    <sys:String x:Key="ProxyManager_SuccessKey">Success Key</sys:String>
+    <sys:String x:Key="ProxyManager_Options">Options</sys:String>
+
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewType">Type</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewHost">Host</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewPort">Port</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewUsername">Username</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewPassword">Password</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewCountry">Country</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewPing">Ping</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewChain">Chain</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewTotal">Total</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewWorking">Working</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_GridViewLastChecked">Last Checked</sys:String>
+
+    <sys:String x:Key="ProxyManager_ProxChecker_DefaultType">Type</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_Total">Total</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_Working">Working</sys:String>
+    <sys:String x:Key="ProxyManager_ProxChecker_NotWorking">Not Working</sys:String>
+
+    <sys:String x:Key="ProxyManager_CopyNameMenuItem">Copy Name</sys:String>
+    <sys:String x:Key="ProxyManager_CopyPathMenuItem">Copy Path</sys:String>
+    <sys:String x:Key="ProxyManager_CopySelectedProxiesMenuItem">Copy Selected Proxies</sys:String>
+    <sys:String x:Key="ProxyManager_CopySelectedProxiesWithTypeAndCredentialsMenuItem">Copy Selected Proxies (with type and credentials)</sys:String>
+    <sys:String x:Key="ProxyManager_DeleteMenuItem">Delete</sys:String>
+    <sys:String x:Key="ProxyManager_RefreshMenuItem">Refresh</sys:String>
+
+    <!--#endregion Proxy Manager-->
+
+    <!--#region General-->
+
+    <sys:String x:Key="Name">Name</sys:String>
+    <sys:String x:Key="Path">Path</sys:String>
+    <sys:String x:Key="Main">Main</sys:String>
+    <sys:String x:Key="Delete">Delete</sys:String>
+    <sys:String x:Key="Insert">Insert</sys:String>
+    <sys:String x:Key="Edit">Edit</sys:String>
+    <sys:String x:Key="DeleteNotFound">Delete Not Found</sys:String>
+    <sys:String x:Key="DeleteAll">Delete All</sys:String>
+    <sys:String x:Key="Username">Username</sys:String>
+    <sys:String x:Key="Password">Password</sys:String>
+    <sys:String x:Key="Bot">Bot</sys:String>
+    <sys:String x:Key="Bots">Bots</sys:String>
+    <sys:String x:Key="Type">Type</sys:String>
+    <sys:String x:Key="CustomType">Custom Type</sys:String>
+    <sys:String x:Key="Keys">Keys</sys:String>
+    <sys:String x:Key="Refresh">Refresh</sys:String>
+    <sys:String x:Key="Clear">Clear</sys:String>
+    <sys:String x:Key="Remove">Remove</sys:String>
+    <sys:String x:Key="Count">Count</sys:String>
+    <sys:String x:Key="Url">Url</sys:String>
+    <sys:String x:Key="Location">Location</sys:String>
+    <sys:String x:Key="Locations">Location(s)</sys:String>
+    <sys:String x:Key="Select">Select</sys:String>
+    <sys:String x:Key="Accept">Accept</sys:String>
+    <sys:String x:Key="Import">Import</sys:String>
+    <sys:String x:Key="Save">Save</sys:String>
+    <sys:String x:Key="Load">Load</sys:String>
+    <sys:String x:Key="Default">Default</sys:String>
+    <sys:String x:Key="On">On</sys:String>
+    <sys:String x:Key="Off">Off</sys:String>
+    <sys:String x:Key="Icon">Icon</sys:String>
+    <sys:String x:Key="Category">Category</sys:String>
+    <sys:String x:Key="Author">Author</sys:String>
+    <sys:String x:Key="Download">Download</sys:String>
+    <sys:String x:Key="Options">Options</sys:String>
+    <sys:String x:Key="Replace">Replace</sys:String>
+    <sys:String x:Key="Cancel">Cancel</sys:String>
+    <sys:String x:Key="AddWordlist">Add Wordlist</sys:String>
+    <sys:String x:Key="Purpose">Purpose</sys:String>
+    <sys:String x:Key="Manager">Manager</sys:String>
+    <sys:String x:Key="Question">Question</sys:String>
+    <sys:String x:Key="Answer">Answer</sys:String>
+    <sys:String x:Key="CPM">CPM</sys:String>
+    <!--  Proxy  -->
+    <sys:String x:Key="Prox">Prox</sys:String>
+    <!--  Capture  -->
+    <sys:String x:Key="Cap">Cap</sys:String>
+    <!--  Selenium  -->
+    <sys:String x:Key="Sele">Sele</sys:String>
+    <!--  CloudFlare  -->
+    <sys:String x:Key="CF">CF</sys:String>
+
+    <sys:String x:Key="Go">Go</sys:String>
+    <sys:String x:Key="DownloadLink">Download Link</sys:String>
+    <sys:String x:Key="Encrypt">Encrypt</sys:String>
+    <sys:String x:Key="Time">Time</sys:String>
+    <sys:String x:Key="Capture">Capture</sys:String>
+    <sys:String x:Key="ToCheck">ToCheck</sys:String>
+    <sys:String x:Key="Hits">Hits</sys:String>
+    <sys:String x:Key="Custom">Custom</sys:String>
+    <sys:String x:Key="Back">Back</sys:String>
+    <sys:String x:Key="Id">Id</sys:String>
+    <sys:String x:Key="Cut">Cut</sys:String>
+    <sys:String x:Key="Copy">Copy</sys:String>
+    <sys:String x:Key="SelectAll">Select All</sys:String>
+    <sys:String x:Key="Start">Start</sys:String>
+    <sys:String x:Key="Abort">Abort</sys:String>
+    <sys:String x:Key="Force">Force</sys:String>
+    <sys:String x:Key="Data">Data</sys:String>
+    <sys:String x:Key="Status">Status</sys:String>
+    <sys:String x:Key="Reload">Reload</sys:String>
+    <sys:String x:Key="Label">Label</sys:String>
+    <sys:String x:Key="Test">Test</sys:String>
+    <sys:String x:Key="Search">Search</sys:String>
+    <sys:String x:Key="Selenium">Selenium</sys:String>
+    <sys:String x:Key="Find">Find</sys:String>
+    <sys:String x:Key="RemoveDups">Remove Dups</sys:String>
+    <sys:String x:Key="RemoveDuplicates">Remove Duplicates</sys:String>
+    <sys:String x:Key="Removed">Removed</sys:String>
+    <sys:String x:Key="LoadWordlist">Load Wordlist</sys:String>
+    <sys:String x:Key="Splitter">Splitter</sys:String>
+    <sys:String x:Key="Splited">Splited</sys:String>
+    <sys:String x:Key="ChangeSeparator">Change Separator</sys:String>
+    <sys:String x:Key="Change">Change</sys:String>
+    <sys:String x:Key="Separator">Separator</sys:String>
+    <sys:String x:Key="Index">Index</sys:String>
+    <sys:String x:Key="CurrentSeparator">Current Sep</sys:String>
+    <sys:String x:Key="Changed">Changed</sys:String>
+    <sys:String x:Key="NewSeparator">New Sep</sys:String>
+    <sys:String x:Key="Split">Split</sys:String>
+    <sys:String x:Key="ConfigPath">Config Path</sys:String>
+    <sys:String x:Key="ConfigConverter">Config Converter</sys:String>
+    <sys:String x:Key="SaveAll">Save All</sys:String>
+
+
+    <!--#endregion General-->
+
+    <!--#region Add Proxy Dialog-->
+
+    <sys:String x:Key="ImportProxies">Import Proxies</sys:String>
+    <sys:String x:Key="ImportFrom">Import from</sys:String>
+    <sys:String x:Key="File">File</sys:String>
+    <sys:String x:Key="Paste">Paste</sys:String>
+    <sys:String x:Key="Api">API</sys:String>
+    <sys:String x:Key="Guide">Guide</sys:String>
+    <sys:String x:Key="DefaultsWhenNotSpecified">Defaults (when not specified)</sys:String>
+    <sys:String x:Key="PasteYourProxiesInTheBoxBelow">Paste your proxies in the box below</sys:String>
+    <sys:String x:Key="Mode">Mode</sys:String>
+    <sys:String x:Key="TitleSelectWordlist">Select Wordlist</sys:String>
+    <sys:String x:Key="TitleImportProxies">Import Proxies</sys:String>
+
+    <!--#endregion Add Proxy Dialog-->
+
+    <!--#region Find & Replace-->
+
+    <sys:String x:Key="FindAndReplace">Find &amp; Replace</sys:String>
+    <sys:String x:Key="DialogReplace">Replace</sys:String>
+    <sys:String x:Key="DialogFind">Find</sys:String>
+    <sys:String x:Key="TextToFind">Text to Find</sys:String>
+    <sys:String x:Key="FindNext">Find Next</sys:String>
+    <sys:String x:Key="SearchIn">Search in</sys:String>
+    <sys:String x:Key="CaseSensitive">Case Sensitive</sys:String>
+    <sys:String x:Key="SearchUp">Search up</sys:String>
+    <sys:String x:Key="MatchWholeWord">Match whole Word</sys:String>
+    <sys:String x:Key="RegularExpression">Regular Expression</sys:String>
+    <sys:String x:Key="Wildcards">Wildcards</sys:String>
+    <sys:String x:Key="ReplaceWith">Replace with</sys:String>
+    <sys:String x:Key="ReplaceAll">Replace All</sys:String>
+
+    <!--#endregion Find & Replace-->
+
+    <!--#region Add Block Dialog-->
+
+    <sys:String x:Key="SearchInBlocks">Search in blocks</sys:String>
+
+    <!--#endregion Add Block Dialog-->
+
+
+    <!--#region Select Config Dialog-->
+
+    <sys:String x:Key="SelectEncryptedConfig">Select Encrypted Config</sys:String>
+
+    <!--#endregion Select Config Dialog-->
+
+    <!--#region Select List Dialog-->
+
+    <sys:String x:Key="AddToProxylists">Add To Proxylists</sys:String>
+    <!--  Remove Duplicate  -->
+    <sys:String x:Key="RemoveDup">Remove Dup</sys:String>
+
+    <!--#endregion Select List Dialog-->
+
+    <!--#region Tips-->
+
+    <sys:String x:Key="NeedsProxiesTip">Needs Proxies</sys:String>
+    <sys:String x:Key="PuppeteerPresentTip">Puppeteer Present</sys:String>
+    <sys:String x:Key="CaptchasNeededTip">Captchas Needed</sys:String>
+
+    <!--#endregion Tips-->
+
+    <!--#region Stacker-->
+
+    <sys:String x:Key="Stacker_CurrentStack">Current stack</sys:String>
+    <sys:String x:Key="Stacker_AddNewBlockTip">Add a new block</sys:String>
+    <sys:String x:Key="Stacker_RemoveSelectedBlockTip">Remove the selected block</sys:String>
+    <sys:String x:Key="Stacker_MoveSelectedBlockUpTip">Move the selected block up</sys:String>
+    <sys:String x:Key="Stacker_MoveSelectedBlockDownTip">Move the selected block down</sys:String>
+    <sys:String x:Key="Stacker_CloneSelectedBlockTip">Clone the selected block</sys:String>
+    <sys:String x:Key="Stacker_EnableDisableSelectedBlockTip">Enable/Disable the selected block</sys:String>
+    <sys:String x:Key="Stacker_UndoTip">Undo</sys:String>
+    <sys:String x:Key="Stacker_RedoTip">Redo</sys:String>
+    <sys:String x:Key="Stacker_DescriptionTip">Description</sys:String>
+    <sys:String x:Key="Stacker_StartWithoutDebuggingTip">Start without debugging</sys:String>
+    <sys:String x:Key="Stacker_Debugger">Debugger</sys:String>
+    <sys:String x:Key="Stacker_StartDebug">Start Debug</sys:String>
+    <sys:String x:Key="StepOver">Step Over</sys:String>
+    <sys:String x:Key="Stacker_Step">Step</sys:String>
+    <sys:String x:Key="Stacker_PersistLog">Persist Log</sys:String>
+    <sys:String x:Key="Stacker">Stacker</sys:String>
+    <sys:String x:Key="SvbScript">Script</sys:String>
+    <sys:String x:Key="UseProxy">Use Proxy</sys:String>
+    <sys:String x:Key="Variables">Variables</sys:String>
+    <sys:String x:Key="Stacker_Log">Log</sys:String>
+    <sys:String x:Key="Stacker_Html">HTML</sys:String>
+    <sys:String x:Key="Script">Script</sys:String>
+    <sys:String x:Key="Stacker_Data">Data</sys:String>
+    <sys:String x:Key="Stacker_Raw">Raw</sys:String>
+    <sys:String x:Key="Stacker_Browser">Browser</sys:String>
+    <sys:String x:Key="BlockInformation">Block Information</sys:String>
+    <sys:String x:Key="LogFilter_NoDataFiltering">No data filtering</sys:String>
+    <sys:String x:Key="LogFilter_OnlyVariables">Only Variables</sys:String>
+    <sys:String x:Key="LogFilter_OnlyCaptures">Only Captures</sys:String>
+    <sys:String x:Key="Stacker_ScriptCode">Script Code</sys:String>
+    <sys:String x:Key="Stacker_Compile">Compile</sys:String>
+    <sys:String x:Key="Stacker_FindAndReplace">Find &amp; Replace</sys:String>
+
+    <!--#endregion Stacker-->
+
+    <!--#region Runner-->
+
+    <sys:String x:Key="StartRunner">START</sys:String>
+    <sys:String x:Key="StopRunner">STOP</sys:String>
+    <sys:String x:Key="HardAbortRunner">HARD ABORT</sys:String>
+    <sys:String x:Key="Runner_SelectCfg">Select CFG</sys:String>
+    <sys:String x:Key="Runner_SelectList">Select List</sys:String>
+
+    <sys:String x:Key="Runner_Performance">Perf</sys:String>
+    <sys:String x:Key="Runner_Proxies">Proxies</sys:String>
+    <sys:String x:Key="Runner_ProxAndPerformanceTip">Proxies &amp; Performance</sys:String>
+    <sys:String x:Key="Runner_Data_Total">Total</sys:String>
+    <sys:String x:Key="Runner_Hits">Hits</sys:String>
+    <sys:String x:Key="Runner_Custom">Custom</sys:String>
+    <sys:String x:Key="Runner_Retries">Retries</sys:String>
+    <sys:String x:Key="Runner_Data_Bad">Bad</sys:String>
+    <sys:String x:Key="Runner_ToCheck">To Check</sys:String>
+    <sys:String x:Key="Runner_OcrRate">OCR Rate</sys:String>
+
+    <sys:String x:Key="Runner_Prox_Total">Total</sys:String>
+    <sys:String x:Key="Runner_Alive">Alive</sys:String>
+    <sys:String x:Key="Runner_Banned">Banned</sys:String>
+    <sys:String x:Key="Runner_Prox_Bad">Bad</sys:String>
+    <sys:String x:Key="Runner_ChecksPerMinute">CPM</sys:String>
+    <sys:String x:Key="Runner_ChecksPerMinuteTip">Checks per minute</sys:String>
+    <sys:String x:Key="Runner_Credit">Credit</sys:String>
+    <sys:String x:Key="Runner_CreditTip">Remaining balance of your captcha solving service account</sys:String>
+    <sys:String x:Key="Runner_Usage">Usage</sys:String>
+    <sys:String x:Key="Runner_UsageTip">Cpu,Ram usaged</sys:String>
+    <sys:String x:Key="Runner_BtnToCheck">ToCheck</sys:String>
+    <sys:String x:Key="Runner_BtnCustom">Custom</sys:String>
+    <sys:String x:Key="Runner_BtnHits">Hits</sys:String>
+    <sys:String x:Key="Runner_GridViewProxType">Type</sys:String>
+    <sys:String x:Key="Runner_GridViewCapture">Capture</sys:String>
+    <sys:String x:Key="Runner_GridViewProxy">Proxy</sys:String>
+    <sys:String x:Key="Runner_GridViewData">Data</sys:String>
+    <sys:String x:Key="Runner_GridViewTime">Time</sys:String>
+    <sys:String x:Key="Runner_GridViewId">Id</sys:String>
+    <sys:String x:Key="Runner_GridViewStatus">Status</sys:String>
+    <sys:String x:Key="Runner_Prog">Prog</sys:String>
+    <sys:String x:Key="Runner_Back">Back</sys:String>
+    <sys:String x:Key="Runner_StartPos">Start</sys:String>
+    <sys:String x:Key="Runner_Bots">Bots</sys:String>
+    <sys:String x:Key="Runner_Proxy">Prox</sys:String>
+    <sys:String x:Key="Runner_ProxyDef">DEF</sys:String>
+    <sys:String x:Key="Runner_ProxyOn">ON</sys:String>
+    <sys:String x:Key="Runner_ProxyOff">OFF</sys:String>
+
+
+    <!--#endregion Runner-->
+
+    <!--#region Config Manager-->
+
+    <sys:String x:Key="CfgManager_New">New</sys:String>
+    <sys:String x:Key="CfgManager_Edit">Edit</sys:String>
+    <sys:String x:Key="CfgManager_Save">Save</sys:String>
+    <sys:String x:Key="CfgManager_Delete">Delete</sys:String>
+    <sys:String x:Key="CfgManager_Download">Download</sys:String>
+    <sys:String x:Key="CfgManager_Reload">Reload</sys:String>
+    <sys:String x:Key="CfgManager_Encrypt">Encrypt</sys:String>
+    <sys:String x:Key="CfgManager_OpenFolder">Open Folder</sys:String>
+    <sys:String x:Key="AllowedWordlists">Allowed Wordlists</sys:String>
+    <sys:String x:Key="BlocksAmount">Blocks Amount</sys:String>
+    <sys:String x:Key="AdditionalInfo">Additional Info</sys:String>
+    <sys:String x:Key="LastModified">Last Modified</sys:String>
+    <sys:String x:Key="SuggestedBots">Suggested Bots</sys:String>
+    <sys:String x:Key="BuiltWithVersion">Built with version</sys:String>
+    <sys:String x:Key="ListViewTip">List View</sys:String>
+    <sys:String x:Key="GridViewTip">Grid View</sys:String>
+    <sys:String x:Key="ConfigReadmeTip">Config readme</sys:String>
+    <sys:String x:Key="Details">Details</sys:String>
+    <sys:String x:Key="Remote">Remote</sys:String>
+
+    <sys:String x:Key="CfgManager_GridViewName">Name</sys:String>
+    <sys:String x:Key="CfgManager_GridViewAuthor">Author</sys:String>
+    <sys:String x:Key="CfgManager_GridViewCategory">Category</sys:String>
+    <sys:String x:Key="CfgManager_GridViewProxies">Proxies</sys:String>
+    <sys:String x:Key="CfgManager_GridViewCaptchas">Captchas</sys:String>
+    <sys:String x:Key="CfgManager_GridViewPuppeteer">Puppeteer</sys:String>
+    <sys:String x:Key="CfgManager_GridViewCF">CF</sys:String>
+    <sys:String x:Key="CfgManager_GridViewLastModified">LastModified</sys:String>
+
+    <sys:String x:Key="CfgManager_TotalConfigs">Total</sys:String>
+    <sys:String x:Key="CfgManager_AllowedWordlists">AllowedWordlists</sys:String>
+    <sys:String x:Key="CfgManager_BlocksAmount">BlocksAmount</sys:String>
+    <sys:String x:Key="CfgManager_SuggestedBots">Suggested Bots</sys:String>
+    <sys:String x:Key="CfgManager_BuiltWithVersion">Built with version</sys:String>
+    <sys:String x:Key="CfgManager_LastModified">LastModified</sys:String>
+    <sys:String x:Key="CfgManager_ShowConfigMenuItem">Show Config</sys:String>
+    <sys:String x:Key="CfgManager_PasteConfigMenuItem">Paste</sys:String>
+    <sys:String x:Key="CfgManager_CopyMenuItem">Copy</sys:String>
+
+    <!--#endregion Config Manager-->
+
+    <!--#region Compiler-->
+
+    <sys:String x:Key="OtherOptions_Compiler_TargetFramework">Target Framework</sys:String>
+    <sys:String x:Key="OtherOptions_Compiler_AssemblyName">Assembly Name</sys:String>
+    <sys:String x:Key="OtherOptions_Compiler_IconPath">Icon Path</sys:String>
+    <sys:String x:Key="OtherOptions_Compiler_References">Reference(s)</sys:String>
+    <sys:String x:Key="OtherOptions_Compiler_SelectIcon">Select</sys:String>
+    <sys:String x:Key="OtherOptions_Compiler_BtnCompile">Compile</sys:String>
+    <sys:String x:Key="OtherOptions_Compiler_OpenFolder">Open Folder</sys:String>
+
+    <!--#endregion Compiler-->
+
+
+    <!--#region Data-->
+
+    <sys:String x:Key="OtherOptions_Data_AllowedWordlistTypes">Allowed Wordlist Types</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Rules">Rules</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Simple">Simple</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Regex">Regex</sys:String>
+    <sys:String x:Key="OtherOptions_Data_TestYourDataHere">Test your data here</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Resources">Resources</sys:String>
+    <sys:String x:Key="OtherOptions_Data_LinesFromFile">Lines From File</sys:String>
+    <sys:String x:Key="OtherOptions_Data_RandomLinesFromFile">Random Lines From File</sys:String>
+    <sys:String x:Key="OtherOptions_Data_SliceName">Slice Name</sys:String>
+    <sys:String x:Key="OtherOptions_Data_RegexToMatch">Regex to match</sys:String>
+    <sys:String x:Key="OtherOptions_Data_IgnoreEmptyLines">Ignore empty lines</sys:String>
+    <sys:String x:Key="OtherOptions_Data_UrlEncodeDataAfterSlicing">URL Encode Data After Slicing</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Test">Test</sys:String>
+    <sys:String x:Key="OtherOptions_Data_CaseSensitive">Case sensitive</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Invert">Invert</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Name">Name</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Location">Location</sys:String>
+    <sys:String x:Key="OtherOptions_Data_LoopsAround">Loops around</sys:String>
+    <sys:String x:Key="OtherOptions_Data_Unique">Unique</sys:String>
+
+    <!--#endregion Data-->
+
+    <sys:String x:Key="Captcha">Captcha</sys:String>
+    <sys:String x:Key="By">by</sys:String>
+    <sys:String x:Key="Captchas">Captchas</sys:String>
+    <sys:String x:Key="OCR">OCR</sys:String>
+    <sys:String x:Key="Compile">Compile</sys:String>
+    <sys:String x:Key="OpeninNotepad">Open in Notepad</sys:String>
+    <sys:String x:Key="Original">Original</sys:String>
+    <sys:String x:Key="Processed">Processed</sys:String>
+    <sys:String x:Key="Readme">Readme</sys:String>
+    <sys:String x:Key="Interpreter">Interpreter</sys:String>
+    <sys:String x:Key="Requests">Requests</sys:String>
+    <sys:String x:Key="Input">Input</sys:String>
+    <sys:String x:Key="Puppeteer">Puppeteer</sys:String>
+
+    <sys:String x:Key="Proxies_CloudFlare">CloudFlare</sys:String>
+    <sys:String x:Key="Proxies_Reloading">Reloading</sys:String>
+    <sys:String x:Key="Proxies_ReloadProxiesWhenAllBanned">Reload proxies when all banned</sys:String>
+    <sys:String x:Key="Proxies_ReloadIntervalInMinutes">Reload interval in minutes (0 = only reload when all banned)</sys:String>
+    <sys:String x:Key="Proxies_BanProxyAfterStatus">Ban the Proxy when the bot ends with one of these statuses</sys:String>
+
+    <sys:String x:Key="Title">Title</sys:String>
+    <sys:String x:Key="UseMarkdown">Use Markdown</sys:String>
+    <sys:String x:Key="Purge">Purge</sys:String>
+    <sys:String x:Key="Config">Config</sys:String>
+    <sys:String x:Key="Date">Date</sys:String>
+    <sys:String x:Key="Wordlist">Wordlist</sys:String>
+    <sys:String x:Key="Proxy">Proxy</sys:String>
+    <sys:String x:Key="CapturedData">Captured Data</sys:String>
+    <sys:String x:Key="TotalHits">Total Hits</sys:String>
+    <sys:String x:Key="Filter">Filter</sys:String>
+    <sys:String x:Key="ListGenerator">List Generator</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Mask">Mask</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_AllowedChars">Allowed Characters</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Digits">Digits</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Lowercase">Lowercase</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Uppercase">Uppercase</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_OnlyOutputLuhnValidNumbers">Only output Luhn-valid numbers</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_AutoAddToWordlistManager">Automatically Add to Wordlist Manager</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_ExpetedNumberOfLines">Expeted Number of Lines</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_ExpetedFileSize">Expeted FileSize</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Generate">Generate</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_GenerateList">Generate List</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Generated">Generated</sys:String>
+    <sys:String x:Key="Tools_ListGenerator_Clear">Clear</sys:String>
+
+
+    <sys:String x:Key="Tools_Tessdata_OpenTessdataFolderTip">Open tessdata folder</sys:String>
+    <sys:String x:Key="Tools_Tessdata_RightClickToAddAllTip">Right click to add all</sys:String>
+    <sys:String x:Key="Tools_Tessdata_RightClickToRemoveAllTip">Right click to remove all</sys:String>
+    <sys:String x:Key="Tools_Tessdata_Download">Download</sys:String>
+
+    <sys:String x:Key="Tools_Wordlist_Location">Location</sys:String>
+    <sys:String x:Key="Tools_Wordlist_LoadWordlist">LoadWordlist</sys:String>
+    <sys:String x:Key="Tools_Wordlist_RemoveDups">Remove Dups</sys:String>
+    <sys:String x:Key="Tools_Wordlist_RemoveDuplicates">Remove Duplicates</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Removed">Removed</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Splitter">Splitter</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Split">Split</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Separator">Separator</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Index">Index</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Splited">Splited</sys:String>
+    <sys:String x:Key="Tools_Wordlist_ChangeSeparator">Change Separator</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Change">Change</sys:String>
+    <sys:String x:Key="Tools_Wordlist_CurrentSeparator">Current Sep</sys:String>
+    <sys:String x:Key="Tools_Wordlist_NewSeparator">New Sep</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Changed">Changed</sys:String>
+    <sys:String x:Key="Tools_Wordlist_Loaded">Loaded</sys:String>
+
+    <sys:String x:Key="SelectPlugin">Select Plugin</sys:String>
+    <sys:String x:Key="General">General</sys:String>
+    <sys:String x:Key="SBSettings_General_OnConfigEditNavigateTo">On config edit, navigate to</sys:String>
+    <sys:String x:Key="SBSettings_General_AutomaticallySetRecommendedBots">Automatically set Recommended Bots</sys:String>
+    <sys:String x:Key="SBSettings_General_ChangeRunnerInterface">Change Runner Interface</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableWarningOnQuit">Disable Warning on Quit</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableWarningOnConfigNotSaved">Disable Warning on Config not Saved</sys:String>
+    <sys:String x:Key="SBSettings_General_AllowLiveConfigEditing">Allow Live Config Editing</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableBrowser">Disable Browser</sys:String>
+    <sys:String x:Key="SBSettings_General_AlwaysOnTop">Always On Top</sys:String>
+    <sys:String x:Key="SBSettings_General_IgnoreWordlistNameOnHitsdedupe">Ignore Wordlist name on hits dedupe</sys:String>
+    <sys:String x:Key="SBSettings_General_MinimizeToSystemTray">Minimize to System Tray</sys:String>
+    <sys:String x:Key="SBSettings_General_AutomaticallyCreateRunnerOnStart">Automatically create a Runner on Start</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableSyntaxHelper">Disable Syntax Helper</sys:String>
+    <sys:String x:Key="SBSettings_General_BackupTheDataBaseDailyUponStart">Backup the DataBase daily upon start</sys:String>
+    <sys:String x:Key="SBSettings_General_AutoSaveConfigOnStacker">Auto Save Config On Stacker</sys:String>
+    <sys:String x:Key="SBSettings_General_LocalHtmlViewer">Local HTML Viewer</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableDebuggerLog">Disable Debugger Log</sys:String>
+    <sys:String x:Key="SBSettings_General_SendDebuggerLogToNotepadPlus">Send Debugger Log to Notepad++</sys:String>
+    <sys:String x:Key="SBSettings_General_ScriptCompletion">Script Completion</sys:String>
+    <sys:String x:Key="SBSettings_General_AutoCompleteDefinedVariables">Auto-complete defined variables on stacker</sys:String>
+    <sys:String x:Key="SBSettings_General_DefaultAuthorForNewConfigs">Default author for new configs</sys:String>
+    <sys:String x:Key="SBSettings_General_ProgramLog">Program Log</sys:String>
+    <sys:String x:Key="SBSettings_General_EnableLogging">Enable Logging</sys:String>
+    <sys:String x:Key="SBSettings_General_LogToFile">Log to file (CARE: gets cleared on start)</sys:String>
+    <sys:String x:Key="SBSettings_General_LogBufferSize">Log Buffer Size</sys:String>
+    <sys:String x:Key="SBSettings_General_IgnoreWordlistNameOnHitsDedupe">Ignore Wordlist name on hits dedupe</sys:String>
+    <sys:String x:Key="SBSettings_Sounds_Enable">Enable</sys:String>
+    <sys:String x:Key="SBSettings_Sounds_OnHitSound">On-Hit Sound</sys:String>
+    <sys:String x:Key="SBSettings_Sounds_OnReloadSound">On-Reload Sound</sys:String>
+    <sys:String x:Key="Reset">Reset</sys:String>
+    <sys:String x:Key="SBSettings_Themes_Colors">COLORS</sys:String>
+    <sys:String x:Key="SBSettings_Themes_Images">IMAGES</sys:String>
+    <sys:String x:Key="Sources">Sources</sys:String>
+    <sys:String x:Key="SBSettings_Sources_AddSource">Add Source</sys:String>
+    <sys:String x:Key="SBSettings_Sources_ClearSources">Clear Sources</sys:String>
+    <sys:String x:Key="SBSettings_Sources_ShowRemoteCustomConfigs">Show Remote Custom Configs</sys:String>
+    <sys:String x:Key="SBSettings_Sources_ApiUrl">API Url</sys:String>
+    <sys:String x:Key="SBSettings_Sources_ApiKey">API Key</sys:String>
+    <sys:String x:Key="SBSettings_Sources_Username">Username</sys:String>
+    <sys:String x:Key="SBSettings_Sources_Password">Password</sys:String>
+
+    <sys:String x:Key="Themes">Themes</sys:String>
+
+
+    <sys:String x:Key="Source">Source</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_CaptchaService">Captcha Service</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_TimeoutForCaptchaSolutions">Timeout for captcha solutions (seconds)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_CheckBalance">Check Balance</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_YourBalanceIs">Your balance is</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_BypassBalanceCheck">Bypass Balance Check (useful for OCR Software)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_2CaptchaApiKey">2Captcha API Key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_AntiCaptchaApiKey">AntiCaptcha API Key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_Custom2CaptchaServer">Custom 2Captcha Server (API Key | Domain | Port)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_DeathByCaptchaCredentials">DeathByCaptcha Credentials (User | Pass)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_DeCaptcherCredentials">DeCaptcher Credentials (User | Pass)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_ImageTyperzApiKey">ImageTyperz API Key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_AZCaptchaApiKey">AZCaptcha API Key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_CaptchasIOApikey">CaptchasIO API key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_RuCaptchaApiKey">RuCaptcha API Key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_SolveCaptchaApiKey">SolveCaptcha API Key</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_SolveRecaptchaCredentials">SolveRecaptcha Credentials (UserId | API Key)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_TrueCaptchaCredentials">TrueCaptcha Credentials (Username | API Key)</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_NineKWToken">NineKW Token</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_CustomAntiCaptchaServer">Custom Anti Captcha Server</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_ApiToken">API Token</sys:String>
+    <sys:String x:Key="CoreSettings_Captchas_Domain">Domain</sys:String>
+
+    <sys:String x:Key="CoreSettings_Puppeteer_PathChromeBinaryOnDisk">Path of the chrome.exe binary on disk</sys:String>
+
+    <sys:String x:Key="CoreSettings_OCR_SaveTheCaptchaToCaptchasFolder">Save the captcha to captchas folder</sys:String>
+
+    <sys:String x:Key="DelDuplicates">Del. Duplicates</sys:String>
+    <sys:String x:Key="DelFiltered">Del. Filtered</sys:String>
+    <sys:String x:Key="CopySelected">Copy Selected</sys:String>
+    <sys:String x:Key="DataWithCapture">Data with Capture</sys:String>
+    <sys:String x:Key="DataFull">Data (Full)</sys:String>
+    <sys:String x:Key="SaveSelected">Save Selected</sys:String>
+    <sys:String x:Key="SendToRecheck">Send to Recheck</sys:String>
+    <sys:String x:Key="SelectedPlugin">Selected Plugin</sys:String>
+    <sys:String x:Key="ShowPlugins">Show Plugins</sys:String>
+    <sys:String x:Key="Plugins_OpenFolder">Open Folder</sys:String>
+    <sys:String x:Key="Plugins_Refresh">Refresh</sys:String>
+    <sys:String x:Key="ShowPluginsTip">Show plugins from github</sys:String>
+    <sys:String x:Key="Supporters">Supporters</sys:String>
+    <sys:String x:Key="VerifiedMarket">Verified Market</sys:String>
+    <sys:String x:Key="WordlistTools">Wordlist Tools</sys:String>
+    <sys:String x:Key="Tor">Tor</sys:String>
+    <sys:String x:Key="TessData">TessData</sys:String>
+    <sys:String x:Key="Sounds">Sounds</sys:String>
+    <sys:String x:Key="BrowserExecutableFolder">Browser Executable Folder</sys:String>
+    <sys:String x:Key="SBSettings_General_StartingWindowWidth">Starting Window Width</sys:String>
+    <sys:String x:Key="SBSettings_General_StartingWindowHeight">Starting Window Height</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableCtrl_V_OnBlocks">Disable Ctrl+C/V on Blocks</sys:String>
+    <sys:String x:Key="SBSettings_Sounds_NoteSounds">NOTE: Custom sounds must be placed in the Sounds subdirectory and have a .wav extension!</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BackgroundImage">Background Image</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BackgroundLogo">Background Logo</sys:String>
+    <sys:String x:Key="SBSettings_Themes_UseImages">Use Images</sys:String>
+    <sys:String x:Key="SBSettings_Themes_Opacity">Opacity</sys:String>
+    <sys:String x:Key="SBSettings_Themes_EnableSnow">Enable Snow</sys:String>
+
+    <sys:String x:Key="CoreSettings_General_WaitTimeAfterBotEnd">Wait Time after bot end (millisec)</sys:String>
+    <sys:String x:Key="CoreSettings_General_MaxNumberOfHits">Max number of Hits (0 = unlimited)</sys:String>
+    <sys:String x:Key="CoreSettings_General_RestrictBlocksToCWD">Restrict Blocks to CWD</sys:String>
+    <sys:String x:Key="CoreSettings_General_RestrictBlocksToCWDTip">Restrict blocks to use resources inside the current working directory (CARE: does not work on Script blocks or pure SvbCode directivies</sys:String>
+    <sys:String x:Key="CoreSettings_General_WebHookUrl">Url</sys:String>
+    <sys:String x:Key="CoreSettings_General_RunnerBotsDisplayMode">Runner Bots Display Mode</sys:String>
+    <sys:String x:Key="CoreSettings_General_DefaultHttpRequestLib">Default HTTP Request Lib</sys:String>
+    <sys:String x:Key="CoreSettings_General_EnableBotLog">Enable Bot Log (slow, RAM-heavy)</sys:String>
+    <sys:String x:Key="CoreSettings_General_SaveLastResponseSource">Save Last Response Source (RAM-heavy)</sys:String>
+    <sys:String x:Key="CoreSettings_General_SendDataInProcessToCheckOnAbort">Send data in process ToCheck on abort</sys:String>
+    <sys:String x:Key="CoreSettings_General_RemoveDuplicateWordlist">Remove Duplicate Wordlist</sys:String>
+    <sys:String x:Key="CoreSettings_General_HitsWebHook">Hits Webhook:</sys:String>
+    <sys:String x:Key="CoreSettings_General_HitsWebHookUsername">Username (will be received by remote API)</sys:String>
+
+
+
+    <sys:String x:Key="Parse">Parse</sys:String>
+    <sys:String x:Key="Prefix">Prefix</sys:String>
+    <sys:String x:Key="Suffix">Suffix</sys:String>
+    <sys:String x:Key="LeftString">Left String</sys:String>
+    <sys:String x:Key="RightString">Right String</sys:String>
+    <sys:String x:Key="Recursive">Recursive</sys:String>
+    <sys:String x:Key="EncOutput">Enc. Output</sys:String>
+    <sys:String x:Key="CreateEmpty">Create Empty</sys:String>
+    <sys:String x:Key="UseRegex">Use Regex</sys:String>
+    <sys:String x:Key="AutomaticMode">Automatic mode</sys:String>
+    <sys:String x:Key="FieldName">Field Name</sys:String>
+    <sys:String x:Key="UseJTokenParsing">Use JToken Parsing</sys:String>
+    <sys:String x:Key="UseJTokenParsingTip">Allows navigating through fields using . for children and [i] or [*] for arrays</sys:String>
+    <sys:String x:Key="CssSelector">Selector</sys:String>
+    <sys:String x:Key="CssAttribute">Attribute</sys:String>
+    <sys:String x:Key="AttributeTip">If you want to parse stuff directly inside the element, write innerHTML</sys:String>
+    <sys:String x:Key="DotMatches">Dot Matches Line Breaks</sys:String>
+    <sys:String x:Key="XPath">XPath</sys:String>
+    <sys:String x:Key="XPathAttribute">Attribute</sys:String>
+    <sys:String x:Key="XPathAttributeTip">If you want to parse stuff directly inside the element, write innerHTML</sys:String>
+    <sys:String x:Key="Http_Method">Method</sys:String>
+    <sys:String x:Key="MaxTimeout">Max Timeout (ms)</sys:String>
+    <sys:String x:Key="Http_ReadResponseContent">Read Response Content</sys:String>
+    <sys:String x:Key="Http_AppendResponseCookies">Append Response Cookies</sys:String>
+    <sys:String x:Key="Http_PostData">POST DATA</sys:String>
+    <sys:String x:Key="ProxyUrl">Proxy Url</sys:String>
+    <sys:String x:Key="Http_ContentType">Content-Type</sys:String>
+    <sys:String x:Key="MaxTimeoutTip">Max timeout to solve the challenge in milliseconds</sys:String>
+    <sys:String x:Key="Captchas_Solution">Solution</sys:String>
+    <sys:String x:Key="Captchas_SiteKey">Site Key</sys:String>
+    <sys:String x:Key="Captchas_GetKey">Get Key</sys:String>
+    <sys:String x:Key="Captchas_SiteUrl">Site Url</sys:String>
+    <sys:String x:Key="Captchas_CapType">Captcha Type</sys:String>
+    <sys:String x:Key="Captchas_UserAgent">User Agent</sys:String>
+    <sys:String x:Key="Captchas_PublicKey">Public Key</sys:String>
+    <sys:String x:Key="Captchas_ServiceUrl">Service Url</sys:String>
+    <sys:String x:Key="Captchas_NoJs">No Js</sys:String>
+    <sys:String x:Key="Captchas_Gt">Gt</sys:String>
+    <sys:String x:Key="Captchas_ApiChallenge">API Challenge</sys:String>
+    <sys:String x:Key="Captchas_ApiServer">API Server</sys:String>
+    <sys:String x:Key="Captchas_hCaptcha_Base64">Base64</sys:String>
+    <sys:String x:Key="Captchas_LanguageGroup">Language Group</sys:String>
+    <sys:String x:Key="Captchas_Language">Language</sys:String>
+    <sys:String x:Key="Captchas_CharacterSet">Character Set</sys:String>
+    <sys:String x:Key="Captchas_MinLength">Min Length</sys:String>
+    <sys:String x:Key="Captchas_MaxLength">Max Length</sys:String>
+    <sys:String x:Key="Captchas_TextInstructions">Text Instructions</sys:String>
+    <sys:String x:Key="Captchas_IsPhrase">Is Phrase</sys:String>
+    <sys:String x:Key="Captchas_RequiresCalculation">Requires Calculation</sys:String>
+    <sys:String x:Key="Captchas_UserId">User Id</sys:String>
+    <sys:String x:Key="Captchas_SessionId">Session Id</sys:String>
+    <sys:String x:Key="Captchas_WebServerSign1">Web Server Sign1</sys:String>
+    <sys:String x:Key="Captchas_WebServerSign2">Web Server Sign2</sys:String>
+    <sys:String x:Key="Captchas_RecaptchaV2_SData">S Data</sys:String>
+    <sys:String x:Key="Captchas_Enterprise">Enterprise</sys:String>
+    <sys:String x:Key="Captchas_IsInvisible">Is Invisible</sys:String>
+    <sys:String x:Key="Captchas_MinScore">Min Score</sys:String>
+    <sys:String x:Key="Captchas_CaseSensitive">Case Sensitive</sys:String>
+    <sys:String x:Key="Captchas_Action">Action</sys:String>
+    <sys:String x:Key="Captchas_Question">Question</sys:String>
+    <sys:String x:Key="InstaBan4xx">Insta Ban 4xx</sys:String>
+    <sys:String x:Key="BanIfNoKeyFound">Ban if no key found</sys:String>
+    <sys:String x:Key="Keychains">Keychains</sys:String>
+    <sys:String x:Key="ExecutionPriority">Exec Priority</sys:String>
+    <sys:String x:Key="FirstByteArray">First</sys:String>
+    <sys:String x:Key="SecondByteArray">Second</sys:String>
+    <sys:String x:Key="Value">Value</sys:String>
+    <sys:String x:Key="CipherText">Cipher Text</sys:String>
+    <sys:String x:Key="Aes_IV">IV</sys:String>
+    <sys:String x:Key="Padding">Padding</sys:String>
+    <sys:String x:Key="Key">Key</sys:String>
+    <sys:String x:Key="Passphrase">Passphrase</sys:String>
+    <sys:String x:Key="KeySize">Key Size</sys:String>
+    <sys:String x:Key="BlockSize">Block Size</sys:String>
+    <sys:String x:Key="PlainText">Plain Text</sys:String>
+    <sys:String x:Key="Salt">Salt</sys:String>
+    <sys:String x:Key="SaltSize">Salt Size</sys:String>
+    <sys:String x:Key="Iterations">Iterations</sys:String>
+    <sys:String x:Key="HashFunction">Hash Function</sys:String>
+    <sys:String x:Key="JwtEnc_Algorithm">Algorithm</sys:String>
+    <sys:String x:Key="Secret">Secret</sys:String>
+    <sys:String x:Key="JwtEnc_ExtraHeaders">Extra Headers</sys:String>
+    <sys:String x:Key="JwtEnc_Payload">Payload</sys:String>
+    <sys:String x:Key="KeyLength">Key Length</sys:String>
+    <sys:String x:Key="Rsa_Modulus">Modulus</sys:String>
+    <sys:String x:Key="Rsa_DParam">D</sys:String>
+    <sys:String x:Key="UseOAEPInsteadOfPKCS">Use OAEP instead of PKCS v1.5</sys:String>
+    <sys:String x:Key="UseXmlParameter">Use Xml Parameter</sys:String>
+    <sys:String x:Key="Rsa_Exponent">Exponent</sys:String>
+    <sys:String x:Key="Scrypt_Cost">Cost</sys:String>
+    <sys:String x:Key="Scrypt_ThreadCount">Thread Count</sys:String>
+    <sys:String x:Key="Scrypt_OutputLength">Output Length</sys:String>
+    <sys:String x:Key="Xor_Bytes">Bytes</sys:String>
+    <sys:String x:Key="KeyValue_Dictionary">Dictionary</sys:String>
+    <sys:String x:Key="RemoveBy">Remove By</sys:String>
+    <sys:String x:Key="Compute_Expression">Expression</sys:String>
+    <sys:String x:Key="Compute_AdvancedExpression">Advanced Expression</sys:String>
+    <sys:String x:Key="Minimum">Minimum</sys:String>
+    <sys:String x:Key="Maximum">Maximum</sys:String>
+    <sys:String x:Key="RoundFloat_DecimalPlaces">Decimal Places</sys:String>
+    <sys:String x:Key="FirstNum">First</sys:String>
+    <sys:String x:Key="SecondNum">Second</sys:String>
+    <sys:String x:Key="StartNum">Start</sys:String>
+    <sys:String x:Key="List">List</sys:String>
+    <sys:String x:Key="ListItem">Item</sys:String>
+    <sys:String x:Key="FirstListStr">First List</sys:String>
+    <sys:String x:Key="SecondListStr">Second List</sys:String>
+    <sys:String x:Key="ExactMatch">Exact Match</sys:String>
+    <sys:String x:Key="AutoTrim">Auto Trim</sys:String>
+    <sys:String x:Key="Comparison">Comparison</sys:String>
+    <sys:String x:Key="Term">Term</sys:String>
+    <sys:String x:Key="Ascending">Ascending</sys:String>
+    <sys:String x:Key="Numeric">Numeric</sys:String>
+    <sys:String x:Key="Fill">Fill</sys:String>
+    <sys:String x:Key="FillString">Fill String</sys:String>
+    <sys:String x:Key="Format">Format</sys:String>
+    <sys:String x:Key="Word">Word</sys:String>
+    <sys:String x:Key="CustomCharset">Custom Charset</sys:String>
+    <sys:String x:Key="RegexOption">Regex Option</sys:String>
+    <sys:String x:Key="Replacement">Replacement</sys:String>
+    <sys:String x:Key="StartIndex">Start Index</sys:String>
+    <sys:String x:Key="ToReplace">To Replace</sys:String>
+    <sys:String x:Key="IgnoreCase">Ignore Case</sys:String>
+    <sys:String x:Key="ReplaceFirst">Replace First</sys:String>
+    <sys:String x:Key="StringSplitOption">Split Option</sys:String>
+    <sys:String x:Key="NumLength">Length</sys:String>
+    <sys:String x:Key="Trans_ReplaceOne">Replace One</sys:String>
+    <sys:String x:Key="FirstDateTime">First</sys:String>
+    <sys:String x:Key="SecondDateTime">Second</sys:String>
+    <sys:String x:Key="UseUtc">Use Utc</sys:String>
+    <sys:String x:Key="UnixTimeIn">Unix Time in</sys:String>
+    <sys:String x:Key="DateTime">DateTime</sys:String>
+    <sys:String x:Key="UnixTime">Unix Time</sys:String>
+    <sys:String x:Key="UnixTimeFrom">From</sys:String>
+    <sys:String x:Key="GenGuid_UpperCaseOutput">UpperCase Output</sys:String>
+    <sys:String x:Key="UaPlatform">Platform</sys:String>
+    <sys:String x:Key="OutputVariable">Output Variable</sys:String>
+    <sys:String x:Key="ShellCmd_Executable">Executable</sys:String>
+    <sys:String x:Key="ShellCmd_Arguments">Arguments</sys:String>
+    <sys:String x:Key="ShellCmd_WaitForExit">Wait for exit</sys:String>
+    <sys:String x:Key="Lambda_Expression">Expression</sys:String>
+    <sys:String x:Key="Lambda_UseLocalVariables">Use Local Variables</sys:String>
+    <sys:String x:Key="Lambda_UseGlobalVariables">Use Global Variables</sys:String>
+    <sys:String x:Key="Lambda_ContextVariables">Context Variables</sys:String>
+    <sys:String x:Key="TimeoutMs">Timeout (ms)</sys:String>
+    <sys:String x:Key="Puppeteer_FindBy">Find By</sys:String>
+    <sys:String x:Key="Puppeteer_Identifier">Identifier</sys:String>
+    <sys:String x:Key="Puppeteer_MouseButton">Mouse Button</sys:String>
+    <sys:String x:Key="Puppeteer_ClickCount">Click Count</sys:String>
+    <sys:String x:Key="Puppeteer_TimeBetweenClicks">Time Between Clicks</sys:String>
+    <sys:String x:Key="Puppeteer_AttributeValue">Attribute Value</sys:String>
+    <sys:String x:Key="Puppeteer_StartMaximized">Start Maximized</sys:String>
+    <sys:String x:Key="Puppeteer_StartFullScreen">Start Full Screen</sys:String>
+    <sys:String x:Key="Puppeteer_UseCaptchaSolver">Use Captcha Solver</sys:String>
+    <sys:String x:Key="FileName">File Name</sys:String>
+    <sys:String x:Key="FullPage">Full Page</sys:String>
+    <sys:String x:Key="OmitBackground">Omit Background</sys:String>
+    <sys:String x:Key="SelectionIndex">Selection Index</sys:String>
+    <sys:String x:Key="Puppeteer_AttributeName">Attribute Name</sys:String>
+    <sys:String x:Key="Puppeteer_Text">Text</sys:String>
+    <sys:String x:Key="Puppeteer_TimeBetweenKeystrokes">Time Between Keystrokes</sys:String>
+    <sys:String x:Key="Puppeteer_FilePaths">File Paths</sys:String>
+    <sys:String x:Key="Puppeteer_Hidden">Hidden</sys:String>
+    <sys:String x:Key="Puppeteer_Visible">Visible</sys:String>
+    <sys:String x:Key="Puppeteer_WebSite">WebSite</sys:String>
+    <sys:String x:Key="Puppeteer_Expression">Expression</sys:String>
+    <sys:String x:Key="Puppeteer_Script">Script</sys:String>
+    <sys:String x:Key="Puppeteer_Arguments">Arguments</sys:String>
+    <sys:String x:Key="Puppeteer_Domain">Domain</sys:String>
+    <sys:String x:Key="Puppeteer_Url">Url</sys:String>
+    <sys:String x:Key="Puppeteer_LoadedEvent">Loaded Event</sys:String>
+    <sys:String x:Key="Puppeteer_Referer">Referer</sys:String>
+    <sys:String x:Key="Puppeteer_Key">Key</sys:String>
+    <sys:String x:Key="Puppeteer_FilePath">File Path</sys:String>
+    <sys:String x:Key="Puppeteer_HorizontalScroll">Horizontal Scroll</sys:String>
+    <sys:String x:Key="Puppeteer_VerticalScroll">Vertical Scroll</sys:String>
+    <sys:String x:Key="Puppeteer_Cookies">Cookies</sys:String>
+    <sys:String x:Key="Puppeteer_UserAgent">User Agent</sys:String>
+    <sys:String x:Key="Puppeteer_Width">Width</sys:String>
+    <sys:String x:Key="Puppeteer_Height">Height</sys:String>
+    <sys:String x:Key="Puppeteer_ScaleFactor">Scale Factor</sys:String>
+    <sys:String x:Key="Puppeteer_IsMobile">Is Mobile</sys:String>
+    <sys:String x:Key="Puppeteer_IsLandscape">Is Landscape</sys:String>
+
+    <sys:String x:Key="Ftp_RemotePath">Remote Path</sys:String>
+    <sys:String x:Key="Ftp_Host">Host</sys:String>
+    <sys:String x:Key="Ftp_Port">Port</sys:String>
+    <sys:String x:Key="Ftp_SslMode">Ssl Mode</sys:String>
+    <sys:String x:Key="Ftp_SslAllowedCurves">Ssl Allowed Curves</sys:String>
+    <sys:String x:Key="Ftp_SslAllowedSuites">Ssl Allowed Suites</sys:String>
+    <sys:String x:Key="Ftp_SslAllowedVersions">Ssl Allowed Versions</sys:String>
+    <sys:String x:Key="Ftp_SslAllowVulnerableSuites">Ssl Allow Vulnerable Suites</sys:String>
+    <sys:String x:Key="Ftp_SslAcceptAllCertificates">Ssl Accept All Certificates</sys:String>
+    <sys:String x:Key="Ftp_TraversalMode">Traversal Mode</sys:String>
+    <sys:String x:Key="Ftp_LocalDir">Local Dir</sys:String>
+    <sys:String x:Key="Ftp_TransferMethod">Transfer Method</sys:String>
+    <sys:String x:Key="Ftp_ActionOnExistingFiles">Action On Existing Files</sys:String>
+    <sys:String x:Key="Ftp_MaxDownloadSpeed">Max Download Speed (KB/s)</sys:String>
+    <sys:String x:Key="Ftp_LocalPath">Local Path</sys:String>
+    <sys:String x:Key="Ftp_FileMode">File Mode</sys:String>
+    <sys:String x:Key="Ftp_GetNativeErrorCode">Get Native Error Code</sys:String>
+    <sys:String x:Key="Ftp_GetNativeErrorCodeTip">Returns 0 if no socket error code is available.</sys:String>
+    <sys:String x:Key="Ftp_DateTimeFormat">DateTime Format</sys:String>
+    <sys:String x:Key="Ftp_Arguments">Arguments</sys:String>
+    <sys:String x:Key="Ftp_Kind">Kind</sys:String>
+    <sys:String x:Key="Ftp_File">File</sys:String>
+    <sys:String x:Key="Ftp_Directory">Directory</sys:String>
+    <sys:String x:Key="Ftp_Link">Link</sys:String>
+    <sys:String x:Key="Ftp_Username">Username</sys:String>
+    <sys:String x:Key="Ftp_Password">Password</sys:String>
+    <sys:String x:Key="Ftp_ReadRaw">Read Raw</sys:String>
+    <sys:String x:Key="Ftp_ReadDescription">Read Description</sys:String>
+    <sys:String x:Key="Ftp_ReadGroup">Read Group</sys:String>
+    <sys:String x:Key="Ftp_ReadCode">Read Code</sys:String>
+    <sys:String x:Key="Ftp_Command">Command</sys:String>
+    <sys:String x:Key="Ftp_RemoteDir">Remote Dir</sys:String>
+    <sys:String x:Key="Ftp_MaxUploadSpeed">Max Upload Speed (KB/s)</sys:String>
+    <sys:String x:Key="Http_ApiUrl">API Url</sys:String>
+    <sys:String x:Key="Http_ProxyUrl">Proxy Url</sys:String>
+    <sys:String x:Key="Http_Url">URL</sys:String>
+    <sys:String x:Key="Http_ReqLib">Http Lib</sys:String>
+    <sys:String x:Key="Http_ReqVer">Http Ver</sys:String>
+    <sys:String x:Key="Http_SecurityProtocol">Security Protocol</sys:String>
+    <sys:String x:Key="Http_ProxyUsage">Proxy Usage</sys:String>
+    <sys:String x:Key="Http_ReqTimeoutMs">Request Timeout (ms)</sys:String>
+    <sys:String x:Key="Http_AutomaticRedirect">Automatic Redirect</sys:String>
+    <sys:String x:Key="Http_AlwaysSendContent">Always Send Content</sys:String>
+    <sys:String x:Key="Http_RequestType">Request Type</sys:String>
+    <sys:String x:Key="Http_UrlEncodeContent">Url Encode Content</sys:String>
+    <sys:String x:Key="Http_CustomCookies">Custom Cookies</sys:String>
+    <sys:String x:Key="Http_CustomHeaders">Custom Headers</sys:String>
+    <sys:String x:Key="Http_ResponseType">Response Type</sys:String>
+    <sys:String x:Key="Http_FilePath">File Path</sys:String>
+    <sys:String x:Key="Http_SaveAsScreenshot">Save as screenshot</sys:String>
+    <sys:String x:Key="Http_RawData">Raw Data</sys:String>
+    <sys:String x:Key="SyntaxTip">Syntax</sys:String>
+    <sys:String x:Key="Http_Username">Username</sys:String>
+    <sys:String x:Key="Http_Password">Password</sys:String>
+    <sys:String x:Key="Http_Boundary">Boundary (random if empty)</sys:String>
+    <sys:String x:Key="Http_MultipartContents">Multipart Contents</sys:String>
+
+    <sys:String x:Key="Imap_Host">Host</sys:String>
+    <sys:String x:Key="Imap_Port">Port</sys:String>
+    <sys:String x:Key="Imap_SslMode">Ssl Mode</sys:String>
+    <sys:String x:Key="Imap_SslAllowedCurves">Ssl Allowed Curves</sys:String>
+    <sys:String x:Key="Imap_SslAllowedSuites">Ssl Allowed Suites</sys:String>
+    <sys:String x:Key="Imap_SslAllowedVersions">Ssl Allowed Versions</sys:String>
+    <sys:String x:Key="Imap_SslAllowVulnerableSuites">Ssl Allow Vulnerable Suites</sys:String>
+    <sys:String x:Key="Imap_SslAcceptAllCertificates">Ssl Accept All Certificates</sys:String>
+    <sys:String x:Key="Imap_Id">Id</sys:String>
+    <sys:String x:Key="Imap_LoginMethod">Method</sys:String>
+    <sys:String x:Key="Imap_Token">Token</sys:String>
+    <sys:String x:Key="Imap_Email">Email</sys:String>
+    <sys:String x:Key="Imap_Password">Password</sys:String>
+    <sys:String x:Key="Imap_AuthenticationMethod">Authentication</sys:String>
+    <sys:String x:Key="Imap_PreferHtml">Prefer Html</sys:String>
+    <sys:String x:Key="Imap_From">From</sys:String>
+    <sys:String x:Key="Imap_Subject">Subject</sys:String>
+    <sys:String x:Key="Imap_Arrived">Arrived</sys:String>
+    <sys:String x:Key="Imap_Body">Body</sys:String>
+    <sys:String x:Key="Imap_Keyword">Keyword</sys:String>
+    <sys:String x:Key="Imap_Folder">Folder</sys:String>
+    <sys:String x:Key="Imap_ReadOnly">Read Only</sys:String>
+
+    <sys:String x:Key="Pop3_Host">Host</sys:String>
+    <sys:String x:Key="Pop3_Port">Port</sys:String>
+    <sys:String x:Key="Pop3_SslMode">Ssl Mode</sys:String>
+    <sys:String x:Key="Pop3_SslAllowedCurves">Ssl Allowed Curves</sys:String>
+    <sys:String x:Key="Pop3_SslAllowedSuites">Ssl Allowed Suites</sys:String>
+    <sys:String x:Key="Pop3_SslAllowedVersions">Ssl Allowed Versions</sys:String>
+    <sys:String x:Key="Pop3_SslAllowVulnerableSuites">Ssl Allow Vulnerable Suites</sys:String>
+    <sys:String x:Key="Pop3_SslAcceptAllCertificates">Ssl Accept All Certificates</sys:String>
+    <sys:String x:Key="Pop3_Index">Index</sys:String>
+    <sys:String x:Key="Pop3_MaxAmount">Max Amount</sys:String>
+    <sys:String x:Key="Pop3_Method">Method</sys:String>
+    <sys:String x:Key="Pop3_Token">Token</sys:String>
+    <sys:String x:Key="Pop3_Email">Email</sys:String>
+    <sys:String x:Key="Pop3_Password">Password</sys:String>
+    <sys:String x:Key="Pop3_AuthenticationMethod">Authentication</sys:String>
+    <sys:String x:Key="Pop3_PreferHtml">Prefer Html</sys:String>
+
+    <sys:String x:Key="Smtp_Host">Host</sys:String>
+    <sys:String x:Key="Smtp_Port">Port</sys:String>
+    <sys:String x:Key="Smtp_SslMode">Ssl Mode</sys:String>
+    <sys:String x:Key="Smtp_SslAllowedCurves">Ssl Allowed Curves</sys:String>
+    <sys:String x:Key="Smtp_SslAllowedSuites">Ssl Allowed Suites</sys:String>
+    <sys:String x:Key="Smtp_SslAllowedVersions">Ssl Allowed Versions</sys:String>
+    <sys:String x:Key="Smtp_SslAllowVulnerableSuites">Ssl Allow Vulnerable Suites</sys:String>
+    <sys:String x:Key="Smtp_SslAcceptAllCertificates">Ssl Accept All Certificates</sys:String>
+    <sys:String x:Key="Smtp_Timeout">Timeout (ms)</sys:String>
+    <sys:String x:Key="Smtp_Method">Method</sys:String>
+    <sys:String x:Key="Smtp_Token">Token</sys:String>
+    <sys:String x:Key="Smtp_Email">Email</sys:String>
+    <sys:String x:Key="Smtp_Password">Password</sys:String>
+    <sys:String x:Key="Smtp_AuthenticationMethod">Authentication</sys:String>
+    <sys:String x:Key="Smtp_Sender">Sender</sys:String>
+    <sys:String x:Key="Smtp_Recipients">Recipients</sys:String>
+    <sys:String x:Key="Smtp_Subject">Subject</sys:String>
+    <sys:String x:Key="Smtp_TextBody">Text Body</sys:String>
+    <sys:String x:Key="Smtp_HtmlBody">Html Body</sys:String>
+
+    <sys:String x:Key="Ssh_Host">Host</sys:String>
+    <sys:String x:Key="Ssh_Port">Port</sys:String>
+    <sys:String x:Key="Ssh_Username">Username</sys:String>
+    <sys:String x:Key="Ssh_Password">Password</sys:String>
+    <sys:String x:Key="Ssh_Timeout">Timeout (ms)</sys:String>
+    <sys:String x:Key="Ssh_ChannelTimeout">Channel Timeout (ms)</sys:String>
+    <sys:String x:Key="Ssh_RetryAttempts">Retry Attempts</sys:String>
+    <sys:String x:Key="Ssh_KeyFile">Key File</sys:String>
+    <sys:String x:Key="Ssh_KeyFilePassword">Key File Password</sys:String>
+    <sys:String x:Key="Ssh_Command">Command</sys:String>
+
+    <sys:String x:Key="Tcp_Host">Host</sys:String>
+    <sys:String x:Key="Tcp_Port">Port</sys:String>
+    <sys:String x:Key="Tcp_Username">Username</sys:String>
+    <sys:String x:Key="Tcp_Password">Password</sys:String>
+    <sys:String x:Key="Tcp_Timeout">Timeout (ms)</sys:String>
+    <sys:String x:Key="Tcp_UseSsl">Use SSL</sys:String>
+    <sys:String x:Key="Tcp_BytesToRead">Bytes To Read</sys:String>
+    <sys:String x:Key="Tcp_Message">Message</sys:String>
+    <sys:String x:Key="Tcp_Unescape">Unescape</sys:String>
+    <sys:String x:Key="Tcp_TerminateWithCRLF">Terminate WithCRLF</sys:String>
+
+    <sys:String x:Key="Ws_StatusDescription">Status Description</sys:String>
+    <sys:String x:Key="Ws_CloseStatus">Close Status</sys:String>
+    <sys:String x:Key="Ws_Url">Url</sys:String>
+    <sys:String x:Key="Ws_Username">Username</sys:String>
+    <sys:String x:Key="Ws_Password">Password</sys:String>
+    <sys:String x:Key="Ws_KeepAliveTimeout">KeepAlive Timeout (ms)</sys:String>
+    <sys:String x:Key="Ws_Timeout">Timeout (ms)</sys:String>
+    <sys:String x:Key="Ws_CustomCookies">Custom Cookies</sys:String>
+    <sys:String x:Key="Ws_CustomHeaders">Custom Headers</sys:String>
+    <sys:String x:Key="Ws_ReceiveBufferSize">Receive Buffer Size</sys:String>
+    <sys:String x:Key="Ws_Message">Message</sys:String>
+    <sys:String x:Key="Ws_MessageType">Message Type</sys:String>
+    <sys:String x:Key="Ws_EndOfMessage">End of Message</sys:String>
+    <sys:String x:Key="Ws_OpeningMessage">Opening Message</sys:String>
+    <sys:String x:Key="Ws_Path">Path</sys:String>
+    <sys:String x:Key="Ws_ClosingMessage">Closing Message</sys:String>
+
+    <sys:String x:Key="UtilityConv_Base64String">Base64 String</sys:String>
+    <sys:String x:Key="UtilityConv_UrlEncode">Url Encode</sys:String>
+    <sys:String x:Key="UtilityConv_BigInteger">Big Integer</sys:String>
+    <sys:String x:Key="UtilityConv_AddPadding">Add Padding</sys:String>
+    <sys:String x:Key="UtilityConv_BinaryString">Binary String</sys:String>
+    <sys:String x:Key="UtilityConv_Bytes">Bytes</sys:String>
+    <sys:String x:Key="UtilityConv_Input">Input</sys:String>
+    <sys:String x:Key="UtilityConv_HexString">Hex String</sys:String>
+    <sys:String x:Key="UtilityConv_OutputBits">Output Bits</sys:String>
+    <sys:String x:Key="UtilityConv_BinaryUnit">Binary Unit</sys:String>
+    <sys:String x:Key="UtilityConv_DecimalPlaces">Decimal Places</sys:String>
+
+    <sys:String x:Key="UtilityFiles_DirPath">Path</sys:String>
+    <sys:String x:Key="UtilityFiles_FilePath">Path</sys:String>
+    <sys:String x:Key="UtilityFiles_Content">Content</sys:String>
+    <sys:String x:Key="UtilityFiles_Encoding">Encoding</sys:String>
+    <sys:String x:Key="UtilityFiles_Contents">Lines</sys:String>
+    <sys:String x:Key="UtilityFiles_FileOriginPath">Origin Path</sys:String>
+    <sys:String x:Key="UtilityFiles_FileDestinationPath">Destination Path</sys:String>
+    <sys:String x:Key="UtilityFiles_SearchPattern">Search Pattern</sys:String>
+    <sys:String x:Key="UtilityFiles_SearchOption">Search Option</sys:String>
+    <sys:String x:Key="UtilityFiles_SvgXml">Xml</sys:String>
+    <sys:String x:Key="UtilityFiles_SvgWidth">Width</sys:String>
+    <sys:String x:Key="UtilityFiles_SvgHeight">Height</sys:String>
+    <sys:String x:Key="Utility_TlgBotToken">Bot Token</sys:String>
+    <sys:String x:Key="Utility_TlgChatId">Chat Id</sys:String>
+    <sys:String x:Key="UtilityFiles_DelayMilliseconds">Milliseconds</sys:String>
+
+    <sys:String x:Key="BrowserShowDebugUITip">Show Debug UI</sys:String>
+    <sys:String x:Key="Hash_LowerCaseOutput">LowerCase Output</sys:String>
+    <sys:String x:Key="SBSettings_General_EnableCookiesInBrowser">Enable Cookies in Browser</sys:String>
+    <sys:String x:Key="SBSettings_Themes_Additional">ADDITIONAL</sys:String>
+    <sys:String x:Key="SBSettings_Themes_SnowAmount">Snow amount</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BackgroundMain">Background Main</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BackgroundSecondary">Background Secondary</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundMain">Foreground Main</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundGood">Foreground Good</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundBad">Foreground Bad</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundCustom">Foreground Custom</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundRetry">Foreground Retry</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundToCheck">Foreground ToCheck</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundMenuSel">Foreground Menu Sel.</sys:String>
+    <sys:String x:Key="SBSettings_Themes_ForegroundMainMenuSel">Foreground Main Menu Sel.</sys:String>
+    <sys:String x:Key="SBSettings_Themes_PrimaryBrush">Primary Brush</sys:String>
+    <sys:String x:Key="SBSettings_Themes_PrimaryTextBrush">Primary Text Brush</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BorderBrush">Border Brush</sys:String>
+    <sys:String x:Key="SBSettings_Themes_MainBar">Main Bar</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BtnLoad">LOAD</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BtnSave">SAVE</sys:String>
+    <sys:String x:Key="SBSettings_Themes_BtnReset">RESET</sys:String>
+
+
+    <sys:String x:Key="Progress">Progress</sys:String>
+
+
+    <sys:String x:Key="OtherOptions_General_Name">Name</sys:String>
+    <sys:String x:Key="OtherOptions_General_Author">Author</sys:String>
+    <sys:String x:Key="OtherOptions_General_Category">Category</sys:String>
+    <sys:String x:Key="OtherOptions_General_Icon">Icon</sys:String>
+    <sys:String x:Key="OtherOptions_General_StatusesForWhichBotWillContinue">Statuses for which the bot will continue</sys:String>
+    <sys:String x:Key="OtherOptions_General_SetIcon">Set</sys:String>
+    <sys:String x:Key="OtherOptions_General_Preview">Preview</sys:String>
+    <sys:String x:Key="OtherOptions_General_SuggestedAmountOfBots">Suggested Amount of Bots</sys:String>
+    <sys:String x:Key="OtherOptions_General_SaveEmptyCaptures">Save empty captures</sys:String>
+    <sys:String x:Key="OtherOptions_General_MaximumCPM">Maximum CPM (0 to disable)</sys:String>
+    <sys:String x:Key="OtherOptions_General_SaveHitsToTextFileInsteadOfDB">Save hits to a text file instead of DB (the output can be found in the Hits/ConfigName folder)</sys:String>
+    <sys:String x:Key="OtherOptions_General_SaveRequiredPlugins">Save Required Plugins in Config</sys:String>
+    <sys:String x:Key="OtherOptions_General_SaveImportedLibraries">Save Imported Libraries</sys:String>
+    <sys:String x:Key="OtherOptions_General_SaveCsScript">Save the C# Script that is in the Compiler Tab</sys:String>
+
+
+    <sys:String x:Key="Proxies_UseProxies">Use Proxies</sys:String>
+    <sys:String x:Key="Proxies_UseOnlySocksProxies">Use Only Socks Proxies</sys:String>
+    <sys:String x:Key="Proxies_UseOnlySSLProxies">Use Only SSL Proxies</sys:String>
+    <sys:String x:Key="Proxies_MaxUsesPerProxy">Maximum uses after which a proxy is banned (0 to disable)</sys:String>
+    <sys:String x:Key="Proxies_BanLoopEvasion">Ban Loop Evasion (0 = disable)</sys:String>
+    <sys:String x:Key="Proxies_BanProxyOnStatuses">Ban Proxy On Statuses</sys:String>
+    <sys:String x:Key="Proxies_GlobalBanKeys">Global Ban Keys</sys:String>
+    <sys:String x:Key="Proxies_GlobalRetryKeys">Global Retry Keys</sys:String>
+    <sys:String x:Key="Proxies_AllowConcurrentUse">Allow Concurrent Use</sys:String>
+    <sys:String x:Key="Proxies_ShuffleProxiesOnStart">Shuffle Proxies on Start</sys:String>
+    <sys:String x:Key="Proxies_Source">Source</sys:String>
+    <sys:String x:Key="Proxies_DontReuseClearanceCookie">Don't Reuse Clearance Cookie (CF)</sys:String>
+    <sys:String x:Key="Proxies_AddRemoteSource">Add</sys:String>
+    <sys:String x:Key="Proxies_ClearRemoteSources">Clear</sys:String>
+    <sys:String x:Key="Proxies_Test">Test</sys:String>
+    <sys:String x:Key="Proxies_Path">Path</sys:String>
+    <sys:String x:Key="Proxies_ProxType">Type</sys:String>
+    <sys:String x:Key="Proxies_Url">Url</sys:String>
+    <sys:String x:Key="Proxies_RegexPattern">Pattern</sys:String>
+    <sys:String x:Key="Proxies_RegexPatternTip">Must use capture groups (...)</sys:String>
+    <sys:String x:Key="Proxies_RegexOutput">Output</sys:String>
+    <sys:String x:Key="Proxies_RegexOutputTip">[0] for full match, [1] for first group etc.</sys:String>
+
+
+    <sys:String x:Key="OtherOptions_Inputs_AddInput">Add Input</sys:String>
+    <sys:String x:Key="OtherOptions_Inputs_ClearInputs">Clear Inputs</sys:String>
+    <sys:String x:Key="OtherOptions_Inputs_VariableName">Variable Name</sys:String>
+    <sys:String x:Key="OtherOptions_Inputs_DefaultAnswer">Default Answer</sys:String>
+    <sys:String x:Key="OtherOptions_Inputs_Description">Description</sys:String>
+
+
+    <sys:String x:Key="OtherOptions_Puppeteer_AlwaysOpen">Always Open browser at the start</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_AlwaysQuit">Always Quit browser at the end</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_HeadlessMode">Headless Mode</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_DismissDialogs">Dismiss Dialogs</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_LoadOnlyDucAndScript">Load only ducument and script</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_IgnoreHttpsErrors">Ignore HTTPS errors</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_DefaultProfileDirectory">Default Profile Directory</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_QuitTheBrowserWhenTheBotEndsWithOneOfTheseStatuses">Quit the browser when the bot ends with one of these statuses</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_CommandLineArgs">Command Line Arguments</sys:String>
+    <sys:String x:Key="OtherOptions_Puppeteer_BlockedUrls">Blocked URLs</sys:String>
+
+    <sys:String x:Key="OtherOptions_Interpreter">Interpreter</sys:String>
+    <sys:String x:Key="OtherOptions_Interpreter_Libs">Lib(s)</sys:String>
+    <sys:String x:Key="OtherOptions_Interpreter_GetSitePkgPath">Get Site Pkg Path</sys:String>
+
+    <sys:String x:Key="CoreSettings_BtnSave">Save</sys:String>
+    <sys:String x:Key="CoreSettings_BtnReset">Reset</sys:String>
+
+    <sys:String x:Key="SBSettings_BtnSave">Save</sys:String>
+    <sys:String x:Key="SBSettings_BtnReset">Reset</sys:String>
+
+
+    <sys:String x:Key="Tools_CfgConverter_Select">Select</sys:String>
+    <sys:String x:Key="Tools_CfgConverter_ConfigPath">Config Path</sys:String>
+    <sys:String x:Key="Tools_CfgConverter_Start">Start</sys:String>
+    <sys:String x:Key="Tools_CfgConverter_Stop">Stop</sys:String>
+    <sys:String x:Key="Tools_CfgConverter_SaveSelected">Save Selected</sys:String>
+    <sys:String x:Key="Tools_CfgConverter_SaveAll">Save All</sys:String>
+    <sys:String x:Key="Tools_CfgConverter_AddConvertedConfigToListOfConfigs">Add converted config(s) to the list of configs</sys:String>
+
+
+    <sys:String x:Key="HitsDB_Delete">Delete</sys:String>
+    <sys:String x:Key="HitsDB_DelDuplicates">Del. Duplicates</sys:String>
+    <sys:String x:Key="HitsDB_DelFiltered">Del. Filtered</sys:String>
+    <sys:String x:Key="HitsDB_Purge">Purge</sys:String>
+    <sys:String x:Key="HitsDB_Filter">Filter</sys:String>
+    <sys:String x:Key="HitsDB_Config">Config</sys:String>
+    <sys:String x:Key="HitsDB_Type">Type</sys:String>
+    <sys:String x:Key="HitsDB_GridViewData">Data</sys:String>
+    <sys:String x:Key="HitsDB_GridViewType">Type</sys:String>
+    <sys:String x:Key="HitsDB_GridViewConfig">Config</sys:String>
+    <sys:String x:Key="HitsDB_GridViewWordlist">Wordlist</sys:String>
+    <sys:String x:Key="HitsDB_GridViewProxy">Proxy</sys:String>
+    <sys:String x:Key="HitsDB_GridViewCapturedData">Captured Data</sys:String>
+
+    <sys:String x:Key="HitsDB_CopySelectedMenuItem">Copy Selected</sys:String>
+    <sys:String x:Key="HitsDB_CopySelectedDataMenuItem">Copy Selected Data</sys:String>
+
+
+    <sys:String x:Key="PageRsaDigitalSign_PemRsaPrivateKey">PEM RSA Private-Key</sys:String>
+    <sys:String x:Key="HashAlgorithm">Hash Algorithm</sys:String>
+    <sys:String x:Key="UrlEncodeOutput">Url Encode Output</sys:String>
+    <sys:String x:Key="Favorites">Favorites</sys:String>
+    <sys:String x:Key="Region">Region</sys:String>
+    <sys:String x:Key="Service">Service</sys:String>
+
+
+    <sys:String x:Key="Ocr_Captcha">Captcha</sys:String>
+    <sys:String x:Key="Ocr_Language">Language</sys:String>
+    <sys:String x:Key="Ocr_Lib">OCR Lib</sys:String>
+    <sys:String x:Key="Ocr_Engine">Engine</sys:String>
+    <sys:String x:Key="Ocr_PageSegmentation">Page Seg</sys:String>
+    <sys:String x:Key="Ocr_PixelFormat">Pixel Format</sys:String>
+    <sys:String x:Key="Ocr_SelectFilter">Select Filter</sys:String>
+    <sys:String x:Key="Ocr_AddFilterTip">Add</sys:String>
+    <sys:String x:Key="Ocr_CloneFilterTip">Clone</sys:String>
+    <sys:String x:Key="Ocr_DisableFilterTip">Disable</sys:String>
+    <sys:String x:Key="Ocr_UpFilterTip">Up</sys:String>
+    <sys:String x:Key="Ocr_DownFilterTip">Down</sys:String>
+    <sys:String x:Key="Ocr_RemoveFilterTip">Remove</sys:String>
+    <sys:String x:Key="Ocr_ClearFilterTip">Clear</sys:String>
+    <sys:String x:Key="Ocr_ReqTimeoutMs">Request Timeout (ms)</sys:String>
+    <sys:String x:Key="Ocr_Filters">Filters</sys:String>
+    <sys:String x:Key="Ocr_Tessdata">Tessdata Folder Path</sys:String>
+    <sys:String x:Key="Ocr_TessernetDataPath">Tessernet Data Path</sys:String>
+    <sys:String x:Key="Ocr_VariableName">Variable Name</sys:String>
+    <sys:String x:Key="Ocr_VariableValue">Variable Value</sys:String>
+    <sys:String x:Key="Ocr_ValueType">Value Type</sys:String>
+    <sys:String x:Key="Ocr_EvaluatingMathematicalExpressions">Evaluating mathematical expressions</sys:String>
+
+    <sys:String x:Key="Ocr_AddVarsTip">Add</sys:String>
+    <sys:String x:Key="Ocr_UpVarsTip">Up</sys:String>
+    <sys:String x:Key="Ocr_DownVarsTip">Down</sys:String>
+    <sys:String x:Key="Ocr_RemoveVarsTip">Remove</sys:String>
+    <sys:String x:Key="Ocr_ClearVarsTip">Clear</sys:String>
+    <sys:String x:Key="Ocr_VariableCount">Variable Count</sys:String>
+
+    <sys:String x:Key="JwtDec_Token">Token</sys:String>
+
+    <sys:String x:Key="Proxylist">Proxylist</sys:String>
+
+    <sys:String x:Key="Ocr_EnableTestMode">Enable Test Mode</sys:String>
+    <sys:String x:Key="Stacker_Captcha">Captcha</sys:String>
+    <sys:String x:Key="Stacker_Captcha_Original">Original</sys:String>
+    <sys:String x:Key="Stacker_Captcha_Processed">Processed</sys:String>
+    <sys:String x:Key="Stacker_Captcha_Result">Result</sys:String>
+    <sys:String x:Key="Ocr_Translation">Translation</sys:String>
+
+    <sys:String x:Key="Ocr_ApplyOnlyFilters">Apply only filters (Test mode)</sys:String>
+
+    <sys:String x:Key="RegexPattern">Pattern</sys:String>
+
+    <sys:String x:Key="Token">Token</sys:String>
+    <sys:String x:Key="Connect">Connect</sys:String>
+    <sys:String x:Key="Commands">Commands</sys:String>
+
+
+    <sys:String x:Key="NativeLibInvoke_LibPath">Lib Path</sys:String>
+    <sys:String x:Key="NativeLibInvoke_FuncName">Func Name</sys:String>
+    <sys:String x:Key="NativeLibInvoke_FuncReturnType">Return Type (Output)</sys:String>
+    <sys:String x:Key="NativeLibInvoke_Unload">Unload</sys:String>
+    <sys:String x:Key="NativeLibInvoke_Parameters">Parameters</sys:String>
+
+    <sys:String x:Key="StartCondition">Start Condition</sys:String>
+    <sys:String x:Key="StartIn">Start in</sys:String>
+    <sys:String x:Key="StartAt">Start at</sys:String>
+    <sys:String x:Key="Hours">Hours</sys:String>
+    <sys:String x:Key="DataPool">Data Pool</sys:String>
+    <sys:String x:Key="HitOutput">Hit Output</sys:String>
+    <sys:String x:Key="Robot">Robot</sys:String>
+    <sys:String x:Key="Total">Total</sys:String>
+    <sys:String x:Key="Minutes">Minutes</sys:String>
+    <sys:String x:Key="Seconds">Seconds</sys:String>
+    <sys:String x:Key="Runner_Skip">Skip</sys:String>
+    <sys:String x:Key="Runner_StartingPoint">Starting Point</sys:String>
+    <sys:String x:Key="Open">Open</sys:String>
+    <sys:String x:Key="SkipWait">Skip Wait</sys:String>
+    <sys:String x:Key="Range">Range</sys:String>
+    <sys:String x:Key="Combinations">Combinations</sys:String>
+    <sys:String x:Key="SelectWordlist">Select Wordlist</sys:String>
+    <sys:String x:Key="AddToWordlists">Add To Wordlists</sys:String>
+    <sys:String x:Key="Step">Step</sys:String>
+    <sys:String x:Key="Amount">Amount</sys:String>
+    <sys:String x:Key="Pad">Pad</sys:String>
+    <sys:String x:Key="Charset">Charset</sys:String>
+    <sys:String x:Key="Length">Length</sys:String>
+    <sys:String x:Key="Runner_ProxyMode">Proxy Mode</sys:String>
+    <sys:String x:Key="ProxySources">Proxy Sources</sys:String>
+    <sys:String x:Key="IncludedTypes">Included Types</sys:String>
+    <sys:String x:Key="DefaultType">Default Type</sys:String>
+    <sys:String x:Key="SelectProxy">Select Proxy</sys:String>
+    <sys:String x:Key="Browser_ExtraCmdLineArgs">Extra Cmd Line Args</sys:String>
+
+
+
+    <sys:String x:Key="OtherOptions_Selenium_AlwaysOpen">Always Open browser at the start</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_AlwaysQuit">Always Quit browser at the end</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_HeadlessMode">Headless Mode</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_DismissDialogs">Dismiss Dialogs</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_DefaultProfileDirectory">Default Profile Directory</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_QuitTheBrowserWhenTheBotEndsWithOneOfTheseStatuses">Quit the browser when the bot ends with one of these statuses</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_CommandLineArgs">Command Line Arguments</sys:String>
+    <sys:String x:Key="Browser_CustomUserAgent">Custom UserAgent</sys:String>
+
+    <sys:String x:Key="CoreSettings_Selenium_BrowserType">Browser that the Selenium webdriver will control</sys:String>
+    <sys:String x:Key="CoreSettings_Selenium_PathChromeBinaryOnDisk">Path of the chrome.exe binary on disk</sys:String>
+    <sys:String x:Key="CoreSettings_Selenium_PathFirefoxBinaryOnDisk">Path of the firefox.exe binary on disk</sys:String>
+    <sys:String x:Key="Selenium_BrowserWidth">Width</sys:String>
+    <sys:String x:Key="Selenium_BrowserHeight">Height</sys:String>
+    <sys:String x:Key="Selenium_Index">Index</sys:String>
+    <sys:String x:Key="Selenium_FindBy">Find By</sys:String>
+    <sys:String x:Key="Selenium_Identifier">Identifier</sys:String>
+    <sys:String x:Key="Selenium_AttributeValue">Attribute Value</sys:String>
+    <sys:String x:Key="Selenium_AttributeName">Attribute Name</sys:String>
+    <sys:String x:Key="Selenium_Value">Value</sys:String>
+    <sys:String x:Key="Selenium_SelectionIndex">Selection Index</sys:String>
+    <sys:String x:Key="Selenium_Text">Text</sys:String>
+    <sys:String x:Key="Selenium_TimeBetweenKeystrokes">Time Between Keystrokes</sys:String>
+    <sys:String x:Key="Selenium_Visible">Visible</sys:String>
+    <sys:String x:Key="Selenium_Url">Url</sys:String>
+    <sys:String x:Key="Selenium_Domain">Domain</sys:String>
+    <sys:String x:Key="Selenium_Cookies">Cookies</sys:String>
+    <sys:String x:Key="Selenium_Key">Key</sys:String>
+    <sys:String x:Key="Selenium_FilePath">File Path</sys:String>
+    <sys:String x:Key="Selenium_ScrollX">X</sys:String>
+    <sys:String x:Key="Selenium_ScrollY">Y</sys:String>
+    <sys:String x:Key="Selenium_Expression">Expression</sys:String>
+
+    <sys:String x:Key="Puppeteer_Index">Index</sys:String>
+    <sys:String x:Key="Runner_SelectWordlist">Select Wordlist</sys:String>
+    <sys:String x:Key="CfgManager_GridViewSelenium">Selenium</sys:String>
+
+    <!--  Puppeteer  -->
+    <sys:String x:Key="Puppe">Puppe</sys:String>
+
+    <sys:String x:Key="Item">Item</sys:String>
+    <sys:String x:Key="KeyValuePair_Dictionary">Dictionary</sys:String>
+    <sys:String x:Key="SeleniumPresentTip">Selenium Present</sys:String>
+
+    <sys:String x:Key="CfgManager_GridViewOCR">OCR</sys:String>
+    <sys:String x:Key="OcrNeededTip">Ocr Needed</sys:String>
+    <sys:String x:Key="OtherOptions_Selenium_DrawMouseMovement">Draw Mouse Movement</sys:String>
+    <sys:String x:Key="Number">Number</sys:String>
+    <sys:String x:Key="Words">Words</sys:String>
+    <sys:String x:Key="Selenium_BanOnTimeout">Ban On Timeout</sys:String>
+    <sys:String x:Key="Runner_Options">Options</sys:String>
+    <sys:String x:Key="BrowserTools">Browser Tools</sys:String>
+    <sys:String x:Key="ChromeExtensions">Chrome Extensions</sys:String>
+    <sys:String x:Key="SBSettings_General_DisableAnimationMode">Disable Animation Mode</sys:String>
+    <sys:String x:Key="Runner_Options_CustomWebhook">Custom Webhook</sys:String>
+    <sys:String x:Key="Runner_Options_Telegram">Telegram</sys:String>
+    <sys:String x:Key="Runner_Options_Discord">Discord</sys:String>
+    <sys:String x:Key="Runner_Options_FileSystem">File System</sys:String>
+    <sys:String x:Key="Runner_Options_Database">Database</sys:String>
+    <sys:String x:Key="BaseFolder">Base folder</sys:String>
+    <sys:String x:Key="Webhook">Webhook</sys:String>
+    <sys:String x:Key="AvatarURL">Avatar URL</sys:String>
+    <sys:String x:Key="OnlyHits">Only Hits</sys:String>
+    <sys:String x:Key="NoSettingsRequired">No settings required</sys:String>
+    <sys:String x:Key="APIServer">API Server</sys:String>
+    <sys:String x:Key="TelegramParseMode">Parse Mode</sys:String>
+    <sys:String x:Key="HitOutputFormat">Format</sys:String>
+    <sys:String x:Key="Runner_Restore">Restore</sys:String>
+    <sys:String x:Key="Runner_Bot_User">User</sys:String>
+    <sys:String x:Key="Runner_Bot_ChatId">Chat Id</sys:String>
+    <sys:String x:Key="Runner_Bot_Command">Command</sys:String>
+    <sys:String x:Key="Runner_Bot_UserPermission">Permission</sys:String>
+    <sys:String x:Key="Runner_Bot_AllowedCommands">Allowed Commands</sys:String>
+    <sys:String x:Key="Runner_NumberOfUsers">Number of Users</sys:String>
+    <sys:String x:Key="Runner_Bot_CopyUser">Copy User</sys:String>
+    <sys:String x:Key="Runner_Bot_CopyPermission">Copy Permission</sys:String>
+    <sys:String x:Key="Runner_Bot_CopyAllowedCommands">Copy Allowed Commands</sys:String>
+    <sys:String x:Key="RemoveSelected">Remove Selected</sys:String>
+    <sys:String x:Key="Ads">Ads</sys:String>
+    <sys:String x:Key="Market">Market</sys:String>
+    <sys:String x:Key="Notif">Notif</sys:String>
+    <sys:String x:Key="Ocr_OnlyDigit">Only Digit</sys:String>
+    <sys:String x:Key="Ocr_OnlyLetter">Only Letter</sys:String>
+    <sys:String x:Key="Ocr_OnlyLetterOrDigit">Only Letter Or Digit</sys:String>
+    <sys:String x:Key="Ocr_AnyChar">Any Char</sys:String>
+    <sys:String x:Key="Ocr_RegexReplace">Regex Replace</sys:String>
+    <sys:String x:Key="Ocr_RegexReplacePatternPlaceholder">Pattern</sys:String>
+    <sys:String x:Key="Ocr_RegexReplacePatternTip">Regex Pattern</sys:String>
+    <sys:String x:Key="Ocr_Replacement">Replacement</sys:String>
+    <sys:String x:Key="Utility_TlgMsg">Text</sys:String>
+
+
+    <sys:String x:Key="EnableAllBlocks">Enable All</sys:String>
+    <sys:String x:Key="DisableAllBlocks">Disable All</sys:String>
+    <sys:String x:Key="ClearUndoRedoBlocks">Clear Undo/Redo</sys:String>
+
+    <sys:String x:Key="Parse_Regex">Regex</sys:String>
+    <sys:String x:Key="Parse_RegexOutput">Output</sys:String>
+
+    <sys:String x:Key="Core_Compile_DotNetFrameworkPath">.Net Framework Path</sys:String>
+    <sys:String x:Key="Tools_Tor_ZippedToolsDirectory">Zipped Directory</sys:String>
+    <sys:String x:Key="Tools_Tor_ExtractedDirectory">Extracted Directory</sys:String>
+    <sys:String x:Key="Tools_Tor_Port">Port</sys:String>
+    <sys:String x:Key="Tools_Tor_SocksPort">Socks Port</sys:String>
+    <sys:String x:Key="Tools_Tor_ControlPort">Control Port</sys:String>
+    <sys:String x:Key="Tools_Tor_ControlPassword">Control Password</sys:String>
+    <sys:String x:Key="Execute">Execute</sys:String>
+
+    <sys:String x:Key="Dict_Keys">Keys</sys:String>
+    <sys:String x:Key="Dict_Values">Values</sys:String>
+    <sys:String x:Key="Dict_Separator">Separator</sys:String>
+    <sys:String x:Key="Dict_KeyValueSeparator">Key &amp; Value Separator</sys:String>
+
+</ResourceDictionary>

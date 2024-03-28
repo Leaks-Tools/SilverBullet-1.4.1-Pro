@@ -1,0 +1,64 @@
+{
+  "General": {
+    "WaitTime": 100,
+    "MaxHits": 0,
+    "BotsDisplayMode": 1,
+    "EnableBotLog": false,
+    "SaveLastSource": false,
+    "SendToCheckOnAbort": false,
+    "RemoveDuplicateWordlist": false,
+    "RestrictBlocksToCWD": true,
+    "WebhookEnabled": false,
+    "WebhookURL": "",
+    "WebhookUser": "Undefined"
+  },
+  "Proxies": {
+    "ConcurrentUse": false,
+    "BanLoopEvasion": 100,
+    "ShuffleOnStart": false,
+    "Reload": true,
+    "ReloadSource": 0,
+    "ReloadPath": "",
+    "ReloadType": 0,
+    "ReloadInterval": 0,
+    "AlwaysGetClearance": false,
+    "GlobalBanKeys": [],
+    "GlobalRetryKeys": [],
+    "RemoteProxySources": []
+  },
+  "Captchas": {
+    "CurrentService": 0,
+    "AntiCapToken": "",
+    "ImageTypToken": "",
+    "DBCUser": "",
+    "DBCPass": "",
+    "TwoCapToken": "",
+    "RuCapToken": "",
+    "DCUser": "",
+    "DCPass": "",
+    "AZCapToken": "",
+    "SCToken": "",
+    "SRUserId": "",
+    "SRToken": "",
+    "TrueCapUser": "",
+    "TrueCapToken": "",
+    "CIOToken": "",
+    "CDToken": "",
+    "CustomTwoCapToken": "",
+    "CustomTwoCapDomain": "example.com",
+    "CustomTwoCapPort": 80,
+    "NineKWToken": "",
+    "CustomAntiCaptchaApiKey": "",
+    "CustomAntiCaptchaDomain": "",
+    "CustomAntiCaptchaPort": 80,
+    "BypassBalanceCheck": false,
+    "AnyCaptchaApiKey": "",
+    "Timeout": 120
+  },
+  "Puppeteer": {
+    "ChromeBinaryLocation": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+  },
+  "Ocr": {
+    "SaveTheCaptchaToCaptchasFolder": false
+  }
+}

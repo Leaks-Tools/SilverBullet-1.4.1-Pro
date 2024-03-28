@@ -1,0 +1,71 @@
+{
+  "General": {
+    "DisplaySvbScriptOnLoad": false,
+    "RecommendedBots": true,
+    "StartingWidth": 800,
+    "StartingHeight": 620,
+    "ChangeRunnerInterface": false,
+    "DisableQuitWarning": false,
+    "DisableNotSavedWarning": false,
+    "DefaultAuthor": "🔥 K3shavGaming 🔥",
+    "LiveConfigUpdates": false,
+    "DisableHTMLView": false,
+    "LocalHTMLViewer": false,
+    "EnableCookiesInBrowser": false,
+    "AlwaysOnTop": false,
+    "MinimizeToSysTray": false,
+    "AutoCreateRunner": false,
+    "DisableDebuggerLog": false,
+    "SendDebuggerLogToNotepadPlus": false,
+    "PersistDebuggerLog": false,
+    "DisableSyntaxHelper": false,
+    "DisplayCapturesLast": false,
+    "DisableCopyPasteBlocks": false,
+    "EnableLogging": false,
+    "LogToFile": false,
+    "LogBufferSize": 10000,
+    "BackupDB": false,
+    "IgnoreWordlistOnHitDedupe": false,
+    "AutoSaveConfigOnStacker": true,
+    "AutoCompleteDefinedVariables": false,
+    "ScriptCompletion": false,
+    "EnableConfigConversion": true,
+    "DisableAnimationMode": false,
+    "ConfigManagerViewMode": 0,
+    "ConfigFilterType": 1
+  },
+  "Sounds": {
+    "EnableSounds": false,
+    "OnHitSound": "rifle_hit.wav",
+    "OnReloadSound": "rifle_reload.wav"
+  },
+  "Sources": {
+    "Sources": [],
+    "ShowRemoteCustomConfigs": false
+  },
+  "Themes": {
+    "BackgroundMain": "#222222",
+    "BackgroundSecondary": "#111111",
+    "ForegroundMain": "#DCDCDC",
+    "ForegroundGood": "#ADFF2F",
+    "ForegroundBad": "#FF6347",
+    "ForegroundCustom": "#FF8C00",
+    "ForegroundRetry": "#FFFF00",
+    "ForegroundToCheck": "#7FFFD4",
+    "ForegroundMenuSelected": "#1E90FF",
+    "ForegroundMainTabCtrlSelectedItem": "#FFFFFFFF",
+    "PrimaryBrush": "#326CF3",
+    "PrimaryTextBrush": "#FFFFFF",
+    "BorderBrush": "#3F3F46",
+    "MainBar": "#FFFFFF",
+    "UseImage": true,
+    "BackgroundImage": "",
+    "BackgroundImageOpacity": 100,
+    "BackgroundLogo": "",
+    "EnableSnow": false,
+    "SnowAmount": 72
+  },
+  "Language": {
+    "CultureName": "en-US"
+  }
+}
